@@ -1,0 +1,602 @@
+﻿body
+{
+  background-image:url('../myimages/horizontal grey.gif'); 
+}
+
+.link
+{ background:none;
+  border:none;
+  font-size:30px;
+  margin: 0 auto;
+}
+
+#banner
+{
+ position: relative;
+ margin: 0 auto;
+ }
+
+#bimg
+{
+ position: absolute;
+ left: 310px;
+}
+
+#traslatecont
+{
+ position: relative;
+ margin: 0 auto;
+}
+
+#traslatecontaboutpage
+{ 
+ position: relative;
+ margin: 0 auto;
+ top: 25px;
+}
+
+#google_translate_element
+{
+ position: absolute;
+ left: 1183px; 
+}
+
+#searchcont
+{
+ position: relative;
+ margin: 0 auto;
+ 
+}
+
+#searchform
+{
+ position: absolute;
+ left: 1150px;
+}
+
+#selectsearchengine
+{
+ position: absolute;
+ left: 1073px;
+ top: 2px;
+}
+
+#buttoncont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 115px;
+}
+
+#buttons
+{
+  position: absolute;
+  left: 487px;
+  font-size:0;
+}
+
+#introduction
+{
+  position: relative;
+  margin: 0 auto;
+  top: 190px;
+}
+
+#article
+{
+  position: absolute;
+  left: 500px;;
+}
+
+#carouselcont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 440px;
+}
+
+#carousel
+{
+  position: absolute;
+  left: 640px;
+}
+
+#timecont
+{
+  position:relative;
+  margin: 0 auto;
+  top: 560px;
+}
+
+#time
+{
+  position: absolute;
+  left: 1170px;
+  border: none;
+}
+
+#cssvalidcont1
+{
+ position: relative;
+ margin: 0 auto;
+ top: 590px;
+}
+
+#cssvalid1
+{
+ position: absolute;
+ left: 1160px;
+}
+
+#htmlvalidcont1
+{
+ position: relative;
+ margin: 0 auto;
+ top: 590px;
+}
+
+#htmlvalid1
+{
+ position: absolute;
+ left: 1250px;
+}
+
+/* end of page Intropage*/
+
+#itemcont
+{
+ position: relative;
+ margin: 0 auto;
+ top: 160px;
+}
+
+#items
+{
+ position: absolute;
+ left: 93px;
+}
+
+#itemtable
+{
+ border: 0px;
+ border-spacing: 30px;
+}
+
+#memecont
+{
+ position: relative;
+ margin: 0 auto;
+ top: 180px;
+}
+
+#meme
+{
+ position: absolute;
+ left: 460px;
+ border-style: solid;
+ border-color: black;
+ border-width: 5px;
+ width: 420px;
+ height: 440px;
+ background: white;
+}
+
+#insert
+{
+ position: relative;
+ margin: 0 auto;
+ top: 180px;
+}
+
+#inbut
+{
+ position: absolute;
+ left: 902px;
+}
+
+#captionoptionscont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 225px;
+}
+
+#captionoptions
+{
+ position: absolute;
+ left: 902px;
+}
+
+#textarea
+{
+ position: relative;
+ margin: 0 auto;
+ top: 255px;
+}
+
+#towrite
+{
+ position: absolute;
+ left: 902px;
+}
+
+#removecap
+{
+ position: relative;
+ margin: 0 auto;
+ top: 303px;
+}
+
+#rembut
+{
+ position: absolute;
+ left: 902px;
+}
+
+#removeitemscont
+{
+ position: relative;
+ margin: 0 auto;
+ top: 303px;
+}
+
+#removeitems
+{
+ position: absolute;
+ left: 1090px;
+}
+
+#templatescont
+{
+ position: relative;
+ margin: 0 auto;
+ top: 350px;
+}
+
+#templates
+{
+ position: absolute;
+ left: 902px;
+ border-style: solid;
+ border-color: black;
+ border-width: 5px;
+ width: 215px;
+ height: 270px;
+}
+
+#fading
+{
+ position: relative;
+ margin: 0 auto;
+ top: 250px;
+}
+
+#fademessage
+{
+ position: absolute;
+ left: 1120px;
+}
+
+#timecont2
+{
+ position: relative;
+ margin: 0 auto;
+ top: 560px;
+}
+
+#time2
+{
+ position: absolute;
+ left: 1170px;
+ border: none;
+}
+
+#cssvalidcont2
+{
+ position: relative;
+ margin: 0 auto;
+ top: 590px;
+}
+
+#cssvalid2
+{
+ position: absolute;
+ left: 1160px;
+}
+
+#htmlvalidcont2
+{
+ position: relative;
+ margin: 0 auto;
+ top: 590px;
+}
+
+#htmlvalid2
+{
+ position: absolute;
+ left: 1250px;
+}
+
+/*end of page createpage*/
+ 
+#sim1cont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 200px;
+}
+
+#sim1
+{
+  position: absolute;
+  left: 520px;
+}
+
+#sim2cont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 215px;
+}
+
+#sim2
+{
+  position: absolute;
+  left: 685px;
+}  
+
+#futurecont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 320px;
+}
+
+#futurecont
+{
+  position: absolute;
+  left: 485px;
+}
+
+#mailcont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 500px;
+} 
+  
+#mail
+{
+  position: absolute;
+  left: 500px;
+}
+
+#mutecont
+{
+  position: relative;
+  margin: 0 auto;
+  top: 550px;
+}
+
+#mute
+{
+  position: absolute;
+  left: 500px;
+}
+
+#timecont3
+{
+ position: relative;
+ margin: 0 auto;
+ top: 560px;
+}
+
+#time3
+{
+ position: absolute;
+ left: 1170px;
+ border: none;
+}
+
+#cssvalidcont3
+{
+ position: relative;
+ margin: 0 auto;
+ top: 590px;
+}
+
+#cssvalid3
+{
+ position: absolute;
+ left: 1160px;
+}
+
+#htmlvalidcont3
+{
+ position: relative;
+ margin: 0 auto;
+ top: 590px;
+}
+
+#htmlvalid3
+{
+ position: absolute;
+ left: 1250px;
+}
+
+.centerbutton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background-color:#ededed;
+	border:1px solid #dcdcdc;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 37px;
+	float: left;
+	text-decoration:none;
+}.centerbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background-color:#dfdfdf;
+}.centerbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.leftbutton {
+    border-top-left-radius: 40px 100px;
+	border-bottom-left-radius: 40px 100px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background-color:#ededed;
+	border:1px solid #dcdcdc;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 37px;
+	float: left;
+	text-decoration:none;
+}.leftbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background-color:#dfdfdf;
+}.leftbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.rightbutton {
+    border-top-right-radius: 40px 100px;
+	border-bottom-right-radius: 40px 100px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background-color:#ededed;
+	border:1px solid #dcdcdc;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 37px;
+	float: left;
+	text-decoration:none;
+}.rightbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background-color:#dfdfdf;
+}.rightbutton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.roundabout-holder 
+{
+    list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 5em;
+	width: 5em;
+}
+.roundabout-moveable-item 
+{
+    cursor: pointer;
+}
+.roundabout-in-focus
+{
+    cursor: auto;
+}
+
+.insertbutton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Comic Sans MS;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+}.insertbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	background-color:#378de5;
+}.insertbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.redbutton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+	background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:17px 14px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #b23e35;
+}.redbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+	background:-moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+	background-color:#ce0100;
+}.redbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.muteaudio {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23) );
+	background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	color:#333333;
+	font-family:arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:18px 76px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffee66;
+}.muteaudio:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64) );
+	background:-moz-linear-gradient( center top, #ffab23 5%, #ffec64 100% );
+	background-color:#ffab23;
+}.muteaudio:active {
+	position:relative;
+	top:1px;
+}

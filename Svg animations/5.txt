@@ -1,0 +1,250 @@
+<svg width="600" height="600" onload="flat_graph()">
+    <circle id="c1" stroke="black" />
+    <circle id="c2" stroke="black">
+        <animate id="c2movex" begin="c7movex.end+1s" fill="freeze"/>
+        <animate id="c2movey" begin="c7movex.end+1s" fill="freeze"/>
+    </circle>
+    <circle id="c3" stroke="black" />
+    <circle id="c4" stroke="black">
+        <animate id="c4movex" begin="c5movex.end+1s" fill="freeze"/>
+        <animate id="c4movey" begin="c5movey.end+1s" fill="freeze"/>
+    </circle>
+    <circle id="c5" stroke="black">
+        <animate id="c5movex" begin="c2movex.end+1s" fill="freeze"/>
+        <animate id="c5movey" begin="c2movex.end+1s" fill="freeze"/>
+    </circle>
+    <circle id="c6" stroke="black" />
+    <circle id="c7" stroke="black">
+        <animate id="c7movex" begin="anim25.end+1s" fill="freeze"/>
+        <animate id="c7movey" begin="anim25.end+1s" fill="freeze"/>
+    </circle>
+    <circle id="c8" stroke="black" />
+    <line id="line1" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim1" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim18" attributeName="visibility" attributeType="CSS" to="visible" begin="anim17.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line1movex" begin="anim25.end+1s" fill="freeze"/>
+        <animate id="line1movey" begin="anim25.end+1s" fill="freeze"/>
+        <set id="endFade5" attributeName="visibility" attributeType="CSS" to="hidden" begin="endFade4.end+1s" dur="1s" fill="freeze"/>
+    </line>
+    <line id="line2" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim2" attributeName="visibility" attributeType="CSS" to="visible" begin="anim1.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim19" attributeName="visibility" attributeType="CSS" to="visible" begin="anim18.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line2movex" begin="c7movex.end+1s" fill="freeze"/>
+        <animate id="line2movey" begin="c7movex.end+1s" fill="freeze"/>
+    </line>
+    <line id="line3" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim3" attributeName="visibility" attributeType="CSS" to="visible" begin="anim2.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim20" attributeName="visibility" attributeType="CSS" to="visible" begin="anim19.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line3movex" begin="c7movex.end+1s" fill="freeze"/>
+        <animate id="line3movey" begin="c7movex.end+1s" fill="freeze"/>
+        <animate id="line3c5movex" begin="c2movex.end+1s" fill="freeze"/>
+        <animate id="line3c5movey" begin="c2movex.end+1s" fill="freeze"/>
+    </line>
+    <line id="line4" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim4" attributeName="visibility" attributeType="CSS" to="visible" begin="anim3.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim17" attributeName="stroke" to="red" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+    </line>
+    <line id="line5" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim5" attributeName="visibility" attributeType="CSS" to="visible" begin="anim4.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim21" attributeName="visibility" attributeType="CSS" to="visible" begin="anim20.end+1s" dur="1s" fill="freeze"/>
+        <set id="endFade3" attributeName="visibility" attributeType="CSS" to="hidden" begin="endFade2.end+1s" dur="1s" fill="freeze"/>
+    </line>
+    <line id="line6" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim6" attributeName="visibility" attributeType="CSS" to="visible" begin="anim5.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim17" attributeName="stroke" to="red" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+    </line>
+    <line id="line7" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim7" attributeName="visibility" attributeType="CSS" to="visible" begin="anim6.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim17" attributeName="stroke" to="red" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line7movex" begin="c5movex.end+1s" fill="freeze"/>
+        <animate id="line7movey" begin="c5movex.end+1s" fill="freeze"/>
+    </line>
+    <line id="line8" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim8" attributeName="visibility" attributeType="CSS" to="visible" begin="anim7.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim17" attributeName="stroke" to="red" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line8movex" begin="anim25.end+1s" fill="freeze"/>
+        <animate id="line8movey" begin="anim25.end+1s" fill="freeze"/>
+    </line>
+    <line id="line9" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim9" attributeName="visibility" attributeType="CSS" to="visible" begin="anim8.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim17" attributeName="stroke" to="red" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line9movex" begin="c2movex.end+1s" fill="freeze"/>
+        <animate id="line9movey" begin="c2movex.end+1s" fill="freeze"/>
+        <animate id="line9c4movex" begin="c5movex.end+1s" fill="freeze"/>
+        <animate id="line9c4movey" begin="c5movex.end+1s" fill="freeze"/>
+    </line>
+    <line id="line10" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim10" attributeName="visibility" attributeType="CSS" to="visible" begin="anim9.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim22" attributeName="visibility" attributeType="CSS" to="visible" begin="anim21.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line10movex" begin="c5movex.end+1s" fill="freeze"/>
+        <animate id="line10movey" begin="c5movex.end+1s" fill="freeze"/>
+        <set id="endFade5" attributeName="visibility" attributeType="CSS" to="hidden" begin="endFade4.end+1s" dur="1s" fill="freeze"/>
+    </line>
+    <line id="line11" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim11" attributeName="visibility" attributeType="CSS" to="visible" begin="anim10.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim17" attributeName="stroke" to="red" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line11movex" begin="anim25.end+1s" fill="freeze"/>
+        <animate id="line11movey" begin="anim25.end+1s" fill="freeze"/>
+    </line>
+    <line id="line12" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim12" attributeName="visibility" attributeType="CSS" to="visible" begin="anim11.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim23" attributeName="visibility" attributeType="CSS" to="visible" begin="anim22.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line12movex" begin="c5movex.end+1s" fill="freeze"/>
+        <animate id="line12movey" begin="c5movex.end+1s" fill="freeze"/>
+        <set id="endFade5" attributeName="visibility" attributeType="CSS" to="hidden" begin="endFade4.end+1s" dur="1s" fill="freeze"/>
+    </line>
+    <line id="line13" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim13" attributeName="visibility" attributeType="CSS" to="visible" begin="anim12.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim24" attributeName="visibility" attributeType="CSS" to="visible" begin="anim23.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line13movex" begin="c7movex.end+1s" fill="freeze"/>
+        <animate id="line13movey" begin="c7movex.end+1s" fill="freeze"/>
+    </line>
+    <line id="line14" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim14" attributeName="visibility" attributeType="CSS" to="visible" begin="anim13.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim16" attributeName="visibility" attributeType="CSS" to="hidden" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim25" attributeName="visibility" attributeType="CSS" to="visible" begin="anim24.end+1s" dur="1s" fill="freeze"/>
+        <set id="endFade1" attributeName="visibility" attributeType="CSS" to="hidden" begin="c4movex.end+1s" dur="1s" fill="freeze"/>
+    </line>
+    <line id="line15" style="stroke:rgb(0,0,255);" visibility="hidden">
+        <set id="anim15" attributeName="visibility" attributeType="CSS" to="visible" begin="anim14.end+1s" dur="1s" fill="freeze"/>
+        <set id="anim17" attributeName="stroke" to="red" begin="anim15.end+1s" dur="1s" fill="freeze"/>
+        <animate id="line15movex" begin="c2movex.end+1s" fill="freeze"/>
+        <animate id="line15movey" begin="c2movex.end+1s" fill="freeze"/>
+    </line>
+    <path id="leftPath" style="stroke:rgb(0,0,255); fill: none;" visibility="hidden">
+        <set id="endFade2" attributeName="visibility" attributeType="CSS" to="visible" begin="endFade1.end+1s" dur="1s" fill="freeze"/>
+    </path>
+    <path id="middlePath" style="stroke:rgb(0,0,255); fill: none;" visibility="hidden">
+        <set id="endFade4" attributeName="visibility" attributeType="CSS" to="visible" begin="endFade3.end+1s" dur="1s" fill="freeze"/>
+    </path>
+    <path id="rightPath" style="stroke:rgb(0,0,255); fill: none;" visibility="hidden">
+        <set id="endFade6" attributeName="visibility" attributeType="CSS" to="visible" begin="endFade5.end+1s" dur="1s" fill="freeze"/>
+    </path>
+</svg>
+<script>
+    function flat_graph() {
+        var cRad = 10;
+        var cDefaultColor = "orange";
+        var bottomLayer = 400;
+        var center = 200; //autos sto bot
+        var cStrokeWidth = 1;
+        var lStrokeWidth = 2;
+        var layerDepth = 100;
+        var side = Math.sqrt(2) / 2 * cRad;
+
+            
+    
+        define_circle(document.getElementById("c1").id, center, bottomLayer, cRad, cDefaultColor, cStrokeWidth);
+        define_circle(document.getElementById("c2").id, center - 2 / 5 * center, bottomLayer - layerDepth, cRad, cDefaultColor, cStrokeWidth);
+        define_circle(document.getElementById("c3").id, center - 2 / 3 * center, bottomLayer - 1.7 * layerDepth, cRad, cDefaultColor, cStrokeWidth);
+        define_circle(document.getElementById("c4").id, center + 2 / 5 * center, bottomLayer - layerDepth, cRad, cDefaultColor, cStrokeWidth);
+        define_circle(document.getElementById("c5").id, center + 1 / 2 * center, bottomLayer - 1.5 * layerDepth, cRad, cDefaultColor, cStrokeWidth);
+        define_circle(document.getElementById("c6").id, 2 * center, bottomLayer - 1.3 * layerDepth, cRad, cDefaultColor, cStrokeWidth);
+        define_circle(document.getElementById("c7").id, center + 1 / 4 * center, bottomLayer - 2.5 * layerDepth, cRad, cDefaultColor, cStrokeWidth);
+        define_circle(document.getElementById("c8").id, center + 1 / 2 * center, bottomLayer - 3.5 * layerDepth, cRad, cDefaultColor, cStrokeWidth);
+    
+        define_line(document.getElementById("line1").id, 2 * center-side,  bottomLayer - 1.3 * layerDepth-side, center + 1 / 4 * center+side, bottomLayer - 2.5 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line2").id, center - 2 / 5 * center-side, bottomLayer - layerDepth-side, center - 2 / 3 * center+side, bottomLayer - 1.7 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line3").id, center - 2 / 5 * center+cRad, bottomLayer - layerDepth, center + 1 / 2 * center-side, bottomLayer - 1.5 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line4").id, center - 2 / 3 * center+side, bottomLayer - 1.7 * layerDepth-side, center + 1 / 2 * center-side, bottomLayer - 3.5 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line5").id, 2 * center, bottomLayer - 1.3 * layerDepth-cRad, center + 1 / 2 * center+side, bottomLayer - 3.5 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line6").id, center+side, bottomLayer-side, 2 * center-side, bottomLayer - 1.3 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line7").id, center + 2 / 5 * center+side, bottomLayer - layerDepth-side, 2 * center-side, bottomLayer - 1.3 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line8").id, center+side, bottomLayer-side, center + 1 / 4 * center-side, bottomLayer - 2.5 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line9").id, center + 2 / 5 * center+side, bottomLayer - layerDepth-side, center + 1 / 2 * center-side, bottomLayer - 1.5 * layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line10").id, center+side, bottomLayer-side, center + 2 / 5 * center-side, bottomLayer - layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line11").id, center - 2 / 3 * center+cRad, bottomLayer - 1.7 * layerDepth, center + 1 / 4 * center-cRad, bottomLayer - 2.5 * layerDepth, lStrokeWidth);
+        define_line(document.getElementById("line12").id, center - 2 / 3 * center+side, bottomLayer - 1.7 * layerDepth+side, center + 2 / 5 * center-side, bottomLayer - layerDepth-side, lStrokeWidth);
+        define_line(document.getElementById("line13").id, center-side, bottomLayer-side, center - 2 / 5 * center+side, bottomLayer - layerDepth+side, lStrokeWidth);
+        define_line(document.getElementById("line14").id, center+side, bottomLayer-side, center + 1 / 2 * center, bottomLayer - 3.5 * layerDepth+cRad, lStrokeWidth);
+        define_line(document.getElementById("line15").id, center + 1 / 2 * center, bottomLayer - 1.5 * layerDepth-cRad, center + 1 / 2 * center, bottomLayer - 3.5 * layerDepth+cRad, lStrokeWidth);
+        
+        move_circle(document.getElementById("c7movex").id, "cx", center + 1 / 4 * center, center - 2 / 3 * center, "2s");
+        move_circle(document.getElementById("c7movey").id, "cy", bottomLayer - 2.5 * layerDepth, bottomLayer, "2s");  
+    
+        move_circle(document.getElementById("c2movex").id, "cx", center - 2 / 5 * center, center, "2s");
+        move_circle(document.getElementById("c2movey").id, "cy", bottomLayer - layerDepth, bottomLayer - 1.7 * layerDepth, "2s"); 
+    
+        move_circle(document.getElementById("c5movex").id, "cx", center + 1 / 2 * center, 2 * center, "2s");
+        move_circle(document.getElementById("c5movey").id, "cy", bottomLayer - 1.5 * layerDepth, bottomLayer - 3.5 * layerDepth, "2s");
+    
+        move_circle(document.getElementById("c4movex").id, "cx", center + 2 / 5 * center, 2.1 * center, "2s");
+        move_circle(document.getElementById("c4movey").id, "cy", bottomLayer - layerDepth, (bottomLayer - 3.5 * layerDepth+bottomLayer - 1.3 * layerDepth)/2, "2s"); 
+    
+        //oi grammes tou 7
+        move_line(document.getElementById("line1movex").id, "x2", center + 1 / 4 * center+side, center - 2 / 3 * center+cRad, "2s");
+        move_line(document.getElementById("line1movey").id, "y2", bottomLayer - 2.5 * layerDepth+side, bottomLayer, "2s");
+        //provlimatiki
+        move_line(document.getElementById("line8movex").id, "x2", center + 1 / 4 * center-side, center - 2 / 3 * center+cRad, "2s");
+        move_line(document.getElementById("line8movey").id, "y2", bottomLayer - 2.5 * layerDepth+side, bottomLayer, "2s");
+        move_line(document.getElementById("line11movex").id, "x2", center + 1 / 4 * center-cRad, center - 2 / 3 * center, "2s");
+        move_line(document.getElementById("line11movey").id, "y2", bottomLayer - 2.5 * layerDepth, bottomLayer-cRad, "2s"); 
+        //oi grammes tou 2
+        move_line(document.getElementById("line2movex").id, "x1", center - 2 / 5 * center-side, center-cRad, "2s");
+        move_line(document.getElementById("line2movey").id, "y1", bottomLayer - layerDepth-side, bottomLayer - 1.7 * layerDepth, "2s");
+        move_line(document.getElementById("line3movex").id, "x1", center - 2 / 5 * center+cRad, center+cRad, "2s");
+        move_line(document.getElementById("line3movey").id, "y1", bottomLayer - layerDepth, bottomLayer - 1.7 * layerDepth, "2s");
+        move_line(document.getElementById("line13movex").id, "x2", center - 2 / 5 * center+side, center, "2s");
+        move_line(document.getElementById("line13movey").id, "y2", bottomLayer - layerDepth+side, bottomLayer - 1.7 * layerDepth+cRad, "2s");
+        //oi grammes tou 5
+        move_line(document.getElementById("line3c5movex").id, "x2", center + 1 / 2 * center-side, 2 * center-side, "2s");
+        move_line(document.getElementById("line3c5movey").id, "y2", bottomLayer - 1.5 * layerDepth+side, bottomLayer - 3.5 * layerDepth+side, "2s");
+        move_line(document.getElementById("line9movex").id, "x2", center + 1 / 2 * center-side, 2 * center, "2s");
+        move_line(document.getElementById("line9movey").id, "y2", bottomLayer - 1.5 * layerDepth+side, bottomLayer - 3.5 * layerDepth+cRad, "2s");
+        move_line(document.getElementById("line15movex").id, "x1", center + 1 / 2 * center, 2 * center-cRad, "2s");
+        move_line(document.getElementById("line15movey").id, "y1", bottomLayer - 1.5 * layerDepth-cRad, bottomLayer - 3.5 * layerDepth, "2s");
+        //oi grammes tou 4
+        move_line(document.getElementById("line7movex").id, "x1", center + 2 / 5 * center+side, 2.1 * center, "2s");
+        move_line(document.getElementById("line7movey").id, "y1", bottomLayer - layerDepth-side, (bottomLayer - 3.5 * layerDepth+bottomLayer - 1.3 * layerDepth)/2+cRad, "2s");     
+        move_line(document.getElementById("line9c4movex").id, "x1", center + 2 / 5 * center+side, 2.1 * center, "2s");
+        move_line(document.getElementById("line9c4movey").id, "y1", bottomLayer - layerDepth-side, (bottomLayer - 3.5 * layerDepth+bottomLayer - 1.3 * layerDepth)/2-cRad, "2s");   
+        move_line(document.getElementById("line10movex").id, "x2", center + 2 / 5 * center-side, 2.1 * center-cRad, "2s");
+        move_line(document.getElementById("line10movey").id, "y2", bottomLayer - layerDepth+side, (bottomLayer - 3.5 * layerDepth+bottomLayer - 1.3 * layerDepth)/2, "2s"); 
+        move_line(document.getElementById("line12movex").id, "x2", center + 2 / 5 * center-side, 2.1 * center-cRad, "2s");
+        move_line(document.getElementById("line12movey").id, "y2", bottomLayer - layerDepth-side, (bottomLayer - 3.5 * layerDepth+bottomLayer - 1.3 * layerDepth)/2, "2s");
+        document.getElementById("leftPath").setAttribute("d", "M"+(center-side)+","+(bottomLayer+side)+" C"+(-60)+","+(1.3*bottomLayer)+" "+(-80)+","+(bottomLayer - 3 * layerDepth)+" "+(center + 1 / 2 * center-cRad)+","+(bottomLayer - 3.5 * layerDepth));
+        document.getElementById("middlePath").setAttribute("d", "M"+(2 * center+cRad)+","+( bottomLayer - 1.3 * layerDepth)+" C"+(2.5*center)+","+(bottomLayer - 3.5 * layerDepth+bottomLayer - 1.3 * layerDepth)/2+" "+(2.5*center)+","+(-20)+" "+(center + 1 / 2 * center+side)+","+(bottomLayer - 3.5 * layerDepth-side));
+        document.getElementById("rightPath").setAttribute("d", "M"+(center+side)+","+( bottomLayer +side)+" C"+(2.5*center)+","+bottomLayer+" "+(3*center)+","+(-80)+" "+(center + 1 / 2 * center+side)+","+(bottomLayer - 3.5 * layerDepth-side));
+    };
+
+    
+    
+    function define_line(id, x1, y1, x2, y2, strokeWidth) {
+        document.getElementById(id).setAttribute("x1", x1);
+        document.getElementById(id).setAttribute("y1", y1);
+        document.getElementById(id).setAttribute("x2", x2);
+        document.getElementById(id).setAttribute("y2", y2);
+        document.getElementById(id).setAttribute("stroke-width", strokeWidth);
+    };
+
+    function define_circle(id, cx, cy, r, color, strokeWidth) {
+        document.getElementById(id).setAttribute("cx", cx);
+        document.getElementById(id).setAttribute("cy", cy);
+        document.getElementById(id).setAttribute("r", r);
+        document.getElementById(id).setAttribute("fill", color);
+        document.getElementById(id).setAttribute("stroke-width", strokeWidth);
+    };
+    
+    function move_circle(id, attributeName, from, to, dur)
+    {
+        document.getElementById(id).setAttribute("attributeName", attributeName);
+        document.getElementById(id).setAttribute("from", from);
+        document.getElementById(id).setAttribute("to", to);
+        document.getElementById(id).setAttribute("dur", dur);
+    };
+    
+    function move_line(id, attributeName, from, to, dur)
+    {
+        document.getElementById(id).setAttribute("attributeName", attributeName);
+        document.getElementById(id).setAttribute("from", from);
+        document.getElementById(id).setAttribute("to", to);
+        document.getElementById(id).setAttribute("dur", dur);
+    };
+</script>

@@ -1,0 +1,1581 @@
+<svg width="600" height="600" onload="loadBridges()">
+    <!--piece1-->
+    <!--main_part-->
+    <circle id="c11" stroke="black" stroke-width="1"></circle>
+    <circle id="c12" stroke="black" stroke-width="1"></circle>
+    <circle id="c13" stroke="black" stroke-width="1"></circle>
+    <circle id="c14" stroke="black" stroke-width="1"></circle>
+    <line id="line11" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+    <line id="line12" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+    <line id="line13" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+    <line id="line14" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+    <!--center_line-->
+    <line id="centerLine" style="stroke:rgb(0,0,0);stroke-width:1"></line>
+    <!--piece2 right------------------------------------------------------------>
+    <circle id="c21" stroke="black" stroke-width="1">
+        <animate id="c21move" begin="anim26.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c22" stroke="black" stroke-width="1">
+        <animate id="c22move" begin="anim26.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c23" stroke="black" stroke-width="1">
+        <animate id="c23move" begin="anim26.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c24" stroke="black" stroke-width="1">
+        <animate id="c24move" begin="anim26.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line21" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line21x1" begin="anim26.end+2s" fill="freeze"></animate>
+        <animate id="line21x2" begin="anim26.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line22" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line22x1" begin="anim26.end+2s" fill="freeze"></animate>
+        <animate id="line22x2" begin="anim26.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line23" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line23x1" begin="anim26.end+2s" fill="freeze"></animate>
+        <animate id="line23x2" begin="anim26.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line24" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line24x1" begin="anim26.end+2s" fill="freeze"></animate>
+        <animate id="line24x2" begin="anim26.end+2s" fill="freeze"></animate>
+    </line>
+    <!--right triangle-->
+    <circle id="tri1" stroke="black" stroke-width="1">
+        <animate id="tri1move" begin="anim26.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="tri2" stroke="black" stroke-width="1">
+        <animate id="tri2move" begin="anim26.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line1tr" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim17" attributeName="stroke" to="magenta" begin="anim16.end+1s" dur="1s" fill="freeze" />
+        <animate id="line1trmovex1" begin="anim26.end+2s" fill="freeze"></animate>
+        <animate id="line1trmovex2" begin="anim26.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line2tr" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim18" attributeName="stroke" to="magenta" begin="anim17.end+1s" dur="1s" fill="freeze" />
+        <animate id="line2trmovex1" begin="anim26.end+2s" fill="freeze"></animate>
+        <animate id="line2trmovex2" begin="anim26.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line3tr" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim19" attributeName="stroke" to="magenta" begin="anim18.end+1s" dur="1s" fill="freeze" />
+        <animate id="line3trmovex1" begin="anim26.end+2s" fill="freeze"></animate>
+        <animate id="line3trmovex2" begin="anim26.end+2s" fill="freeze"></animate>
+    </line>
+    <!--piece3------------------------------------------------------------------>
+    <circle id="c31" stroke="black" stroke-width="1">
+        <animate id="c31movex" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="c31movey" begin="c51move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c32" stroke="black" stroke-width="1">
+        <animate id="c32movex" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="c32movey" begin="c51move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c33" stroke="black" stroke-width="1">
+        <animate id="c33movex" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="c33movey" begin="c51move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c34" stroke="black" stroke-width="1">
+        <animate id="c34movex" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="c34movey" begin="c51move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line31" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line31x1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line31x2" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line31y1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line31y2" begin="c51move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line32" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line32x1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line32x2" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line32y1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line32y2" begin="c51move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line33" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line33x1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line33x2" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line33y1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line33y2" begin="c51move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line34" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line34x1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line34x2" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line34y1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line34y2" begin="c51move.end+2s" fill="freeze"></animate>
+    </line>
+    <circle id="c3" stroke="black" stroke-width="1">
+        <animate id="c3movex" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="c3movey" begin="c51move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line31o" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim12" attributeName="stroke" to="green" begin="anim11.end+1s" dur="1s" fill="freeze" />
+        <animate id="line31ox1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line31ox2" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line31oy1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line31oy2" begin="c51move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line32o" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim11" attributeName="stroke" to="green" begin="anim10.end+1s" dur="1s" fill="freeze" />
+        <animate id="line32ox1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line32ox2" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line32oy1" begin="c51move.end+2s" fill="freeze"></animate>
+        <animate id="line32oy2" begin="c51move.end+2s" fill="freeze"></animate>
+    </line>
+    <!--piece4-->
+    <circle id="c41" stroke="black" stroke-width="1">
+        <animate id="c41move" begin="c21move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c42" stroke="black" stroke-width="1">
+        <animate id="c42move" begin="c21move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c43" stroke="black" stroke-width="1">
+        <animate id="c43move" begin="c21move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c44" stroke="black" stroke-width="1">
+        <animate id="c44move" begin="c21move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line41" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line41x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="line41x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line42" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line42x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="line42x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line43" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line43x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="line43x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line44" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line44x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="line44x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <circle id="c4tri1" stroke="black" stroke-width="1">
+        <animate id="c4tri1move" begin="c21move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c4tri2" stroke="black" stroke-width="1">
+        <animate id="c4tri2move" begin="c21move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c4tri3" stroke="black" stroke-width="1">
+        <animate id="c4tri3move" begin="c21move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="linetri1" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim13" attributeName="stroke" to="rgb(233,229,114)" begin="anim12.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetri1x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="linetri1x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetri2" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim16" attributeName="stroke" to="rgb(233,229,114)" begin="anim15.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetri2x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="linetri2x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetri3" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim15" attributeName="stroke" to="rgb(233,229,114)" begin="anim14.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetri3x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="linetri3x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetri4" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim14" attributeName="stroke" to="rgb(233,229,114)" begin="anim13.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetri4x1" begin="c21move.end+2s" fill="freeze"></animate>
+        <animate id="linetri4x2" begin="c21move.end+2s" fill="freeze"></animate>
+    </line>
+    <!--piece5-->
+    <circle id="c51" stroke="black" stroke-width="1">
+        <animate id="c51move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c52" stroke="black" stroke-width="1">
+        <animate id="c52move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c53" stroke="black" stroke-width="1">
+        <animate id="c53move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c54" stroke="black" stroke-width="1">
+        <animate id="c54move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line51" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line51y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="line51y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line52" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line52y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="line52y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line53" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line53y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="line53y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line54" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line54y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="line54y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <circle id="c5tri1" stroke="black" stroke-width="1">
+        <animate id="c5tri1move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c5tri2" stroke="black" stroke-width="1">
+        <animate id="c5tri2move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c5tri3" stroke="black" stroke-width="1">
+        <animate id="c5tri3move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c5tri4" stroke="black" stroke-width="1">
+        <animate id="c5tri4move" begin="c61move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="linetop1" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim26" attributeName="stroke" to="blue" begin="anim25.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetop1y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="linetop1y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetop2" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim22" attributeName="stroke" to="blue" begin="anim21.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetop2y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="linetop2y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetop3" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim24" attributeName="stroke" to="blue" begin="anim23.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetop3y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="linetop3y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetop4" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim25" attributeName="stroke" to="blue" begin="anim24.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetop4y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="linetop4y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetop5" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim21" attributeName="stroke" to="blue" begin="anim20.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetop5y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="linetop5y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetop6" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim20" attributeName="stroke" to="blue" begin="anim19.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetop6y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="linetop6y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="linetop7" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim23" attributeName="stroke" to="blue" begin="anim22.end+1s" dur="1s" fill="freeze" />
+        <animate id="linetop7y1" begin="c61move.end+2s" fill="freeze"></animate>
+        <animate id="linetop7y2" begin="c61move.end+2s" fill="freeze"></animate>
+    </line>
+    <!--piece6-->
+    <circle id="c61" stroke="black" stroke-width="1">
+        <animate id="c61move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c62" stroke="black" stroke-width="1">
+        <animate id="c62move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c63" stroke="black" stroke-width="1">
+        <animate id="c63move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c64" stroke="black" stroke-width="1">
+        <animate id="c64move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line61" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line61y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line61y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line62" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line62y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line62y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line63" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line63y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line63y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line64" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line64y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line64y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <circle id="c6w1" stroke="black" stroke-width="1">
+        <animate id="c6w1move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c6w2" stroke="black" stroke-width="1">
+        <animate id="c6w2move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c6w3" stroke="black" stroke-width="1">
+        <animate id="c6w3move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c6w4" stroke="black" stroke-width="1">
+        <animate id="c6w4move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c6w5" stroke="black" stroke-width="1">
+        <animate id="c6w5move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <circle id="c6w6" stroke="black" stroke-width="1">
+        <animate id="c6w6move" begin="c41move.end+2s" fill="freeze"></animate>
+    </circle>
+    <line id="line6of91" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim9" attributeName="stroke" to="red" begin="anim8.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of91y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of91y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of92" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim8" attributeName="stroke" to="red" begin="anim7.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of92y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of92y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of93" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim7" attributeName="stroke" to="red" begin="anim6.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of93y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of93y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of94" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim1" attributeName="stroke" to="red" begin="1s" dur="1s" fill="freeze" />
+        <animate id="line6of94y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of94y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of95" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim6" attributeName="stroke" to="red" begin="anim5.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of95y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of95y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of96" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim10" attributeName="stroke" to="red" begin="anim9.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of96y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of96y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of97" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim5" attributeName="stroke" to="red" begin="anim4.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of97y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of97y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of98" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim3" attributeName="stroke" to="red" begin="anim2.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of98y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of98y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of99" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim2" attributeName="stroke" to="red" begin="anim1.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of99y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of99y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+    <line id="line6of910" style="stroke:rgb(0,0,0);stroke-width:2">
+        <set id="anim4" attributeName="stroke" to="red" begin="anim3.end+1s" dur="1s" fill="freeze" />
+        <animate id="line6of910y1" begin="c41move.end+2s" fill="freeze"></animate>
+        <animate id="line6of910y2" begin="c41move.end+2s" fill="freeze"></animate>
+    </line>
+</svg>
+<script>
+    function loadBridges() {
+        var cRad = 7;
+        var cDefaultColor = "#6699FF";
+        var side = Math.sqrt(2) / 2 * cRad;
+        var centerX = 250;
+        var centerY = 250;
+        var halfDiag = 30;
+
+        //main part
+
+        document.getElementById("c11").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c12").setAttribute("cx", centerX);
+        document.getElementById("c13").setAttribute("cx", centerX + halfDiag + cRad);
+        document.getElementById("c14").setAttribute("cx", centerX);
+
+        document.getElementById("c11").setAttribute("cy", centerY);
+        document.getElementById("c12").setAttribute("cy", centerY - halfDiag - cRad);
+        document.getElementById("c13").setAttribute("cy", centerY);
+        document.getElementById("c14").setAttribute("cy", centerY + halfDiag + cRad);
+
+        document.getElementById("c11").setAttribute("r", cRad);
+        document.getElementById("c12").setAttribute("r", cRad);
+        document.getElementById("c13").setAttribute("r", cRad);
+        document.getElementById("c14").setAttribute("r", cRad);
+
+        document.getElementById("c11").setAttribute("fill", cDefaultColor);
+        document.getElementById("c12").setAttribute("fill", cDefaultColor);
+        document.getElementById("c13").setAttribute("fill", cDefaultColor);
+        document.getElementById("c14").setAttribute("fill", cDefaultColor);
+
+        //main part side lines    
+        document.getElementById("line11").setAttribute("x1", centerX - halfDiag - cRad + side);
+        document.getElementById("line11").setAttribute("y1", centerY - side);
+        document.getElementById("line11").setAttribute("x2", centerX - side);
+        document.getElementById("line11").setAttribute("y2", centerY - halfDiag - cRad + side);
+
+        document.getElementById("line12").setAttribute("x1", centerX + side);
+        document.getElementById("line12").setAttribute("y1", centerY - halfDiag - cRad + side);
+        document.getElementById("line12").setAttribute("x2", centerX + halfDiag + cRad - side);
+        document.getElementById("line12").setAttribute("y2", centerY - side);
+
+        document.getElementById("line13").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("line13").setAttribute("y1", centerY + side);
+        document.getElementById("line13").setAttribute("x2", centerX + side);
+        document.getElementById("line13").setAttribute("y2", centerY + halfDiag + cRad - side);
+
+        document.getElementById("line14").setAttribute("x1", centerX - side);
+        document.getElementById("line14").setAttribute("y1", centerY + halfDiag + cRad - side);
+        document.getElementById("line14").setAttribute("x2", centerX - halfDiag - cRad + side);
+        document.getElementById("line14").setAttribute("y2", centerY + side);
+
+        //main part central line
+        document.getElementById("centerLine").setAttribute("x1", centerX);
+        document.getElementById("centerLine").setAttribute("y1", centerY - halfDiag);
+        document.getElementById("centerLine").setAttribute("x2", centerX);
+        document.getElementById("centerLine").setAttribute("y2", centerY + halfDiag);
+
+        //right part
+        document.getElementById("c21").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c22").setAttribute("cx", centerX);
+        document.getElementById("c23").setAttribute("cx", centerX + halfDiag + cRad);
+        document.getElementById("c24").setAttribute("cx", centerX);
+
+        document.getElementById("c21").setAttribute("cy", centerY);
+        document.getElementById("c22").setAttribute("cy", centerY - halfDiag - cRad);
+        document.getElementById("c23").setAttribute("cy", centerY);
+        document.getElementById("c24").setAttribute("cy", centerY + halfDiag + cRad);
+
+        document.getElementById("c21").setAttribute("r", cRad);
+        document.getElementById("c22").setAttribute("r", cRad);
+        document.getElementById("c23").setAttribute("r", cRad);
+        document.getElementById("c24").setAttribute("r", cRad);
+
+        document.getElementById("c21").setAttribute("fill", cDefaultColor);
+        document.getElementById("c22").setAttribute("fill", cDefaultColor);
+        document.getElementById("c23").setAttribute("fill", cDefaultColor);
+        document.getElementById("c24").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("line21").setAttribute("x1", centerX - halfDiag - cRad + side);
+        document.getElementById("line21").setAttribute("y1", centerY - side);
+        document.getElementById("line21").setAttribute("x2", centerX - side);
+        document.getElementById("line21").setAttribute("y2", centerY - halfDiag - cRad + side);
+
+        document.getElementById("line22").setAttribute("x1", centerX + side);
+        document.getElementById("line22").setAttribute("y1", centerY - halfDiag - cRad + side);
+        document.getElementById("line22").setAttribute("x2", centerX + halfDiag + cRad - side);
+        document.getElementById("line22").setAttribute("y2", centerY - side);
+
+        document.getElementById("line23").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("line23").setAttribute("y1", centerY + side);
+        document.getElementById("line23").setAttribute("x2", centerX + side);
+        document.getElementById("line23").setAttribute("y2", centerY + halfDiag + cRad - side);
+
+        document.getElementById("line24").setAttribute("x1", centerX - side);
+        document.getElementById("line24").setAttribute("y1", centerY + halfDiag + cRad - side);
+        document.getElementById("line24").setAttribute("x2", centerX - halfDiag - cRad + side);
+        document.getElementById("line24").setAttribute("y2", centerY + side);
+
+        //right triangle
+        document.getElementById("tri1").setAttribute("cx", centerX + 2 * halfDiag + 2 * cRad);
+        document.getElementById("tri2").setAttribute("cx", centerX + 2 * halfDiag + 2 * cRad);
+
+        document.getElementById("tri1").setAttribute("cy", centerY - halfDiag / 2);
+        document.getElementById("tri2").setAttribute("cy", centerY + halfDiag / 2);
+
+        document.getElementById("tri1").setAttribute("r", cRad);
+        document.getElementById("tri2").setAttribute("r", cRad);
+
+        document.getElementById("tri1").setAttribute("fill", cDefaultColor);
+        document.getElementById("tri2").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("line1tr").setAttribute("x1", centerX + halfDiag + cRad + side);
+        document.getElementById("line1tr").setAttribute("y1", centerY - side);
+        document.getElementById("line1tr").setAttribute("x2", centerX + 2 * halfDiag + 2 * cRad - side);
+        document.getElementById("line1tr").setAttribute("y2", centerY - halfDiag / 2 + side);
+
+        document.getElementById("line2tr").setAttribute("x1", centerX + 2 * halfDiag + 2 * cRad);
+        document.getElementById("line2tr").setAttribute("y1", centerY - halfDiag / 2 + cRad);
+        document.getElementById("line2tr").setAttribute("x2", centerX + 2 * halfDiag + 2 * cRad);
+        document.getElementById("line2tr").setAttribute("y2", centerY + halfDiag / 2 - cRad);
+
+        document.getElementById("line3tr").setAttribute("x1", centerX + 2 * halfDiag + 2 * cRad - side);
+        document.getElementById("line3tr").setAttribute("y1", centerY + halfDiag / 2 - side);
+        document.getElementById("line3tr").setAttribute("x2", centerX + halfDiag + cRad + side);
+        document.getElementById("line3tr").setAttribute("y2", centerY + side);
+
+        //bottom left part
+        document.getElementById("c31").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c32").setAttribute("cx", centerX);
+        document.getElementById("c33").setAttribute("cx", centerX + halfDiag + cRad);
+        document.getElementById("c34").setAttribute("cx", centerX);
+
+        document.getElementById("c31").setAttribute("cy", centerY);
+        document.getElementById("c32").setAttribute("cy", centerY - halfDiag - cRad);
+        document.getElementById("c33").setAttribute("cy", centerY);
+        document.getElementById("c34").setAttribute("cy", centerY + halfDiag + cRad);
+
+        document.getElementById("c31").setAttribute("r", cRad);
+        document.getElementById("c32").setAttribute("r", cRad);
+        document.getElementById("c33").setAttribute("r", cRad);
+        document.getElementById("c34").setAttribute("r", cRad);
+
+        document.getElementById("c31").setAttribute("fill", cDefaultColor);
+        document.getElementById("c32").setAttribute("fill", cDefaultColor);
+        document.getElementById("c33").setAttribute("fill", cDefaultColor);
+        document.getElementById("c34").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("line31").setAttribute("x1", centerX - halfDiag - cRad + side);
+        document.getElementById("line31").setAttribute("y1", centerY - side);
+        document.getElementById("line31").setAttribute("x2", centerX - side);
+        document.getElementById("line31").setAttribute("y2", centerY - halfDiag - cRad + side);
+
+        document.getElementById("line32").setAttribute("x1", centerX + side);
+        document.getElementById("line32").setAttribute("y1", centerY - halfDiag - cRad + side);
+        document.getElementById("line32").setAttribute("x2", centerX + halfDiag + cRad - side);
+        document.getElementById("line32").setAttribute("y2", centerY - side);
+
+        document.getElementById("line33").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("line33").setAttribute("y1", centerY + side);
+        document.getElementById("line33").setAttribute("x2", centerX + side);
+        document.getElementById("line33").setAttribute("y2", centerY + halfDiag + cRad - side);
+
+        document.getElementById("line34").setAttribute("x1", centerX - side);
+        document.getElementById("line34").setAttribute("y1", centerY + halfDiag + cRad - side);
+        document.getElementById("line34").setAttribute("x2", centerX - halfDiag - cRad + side);
+        document.getElementById("line34").setAttribute("y2", centerY + side);
+
+        //the only circle
+        document.getElementById("c3").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c3").setAttribute("cy", centerY + halfDiag + cRad);
+        document.getElementById("c3").setAttribute("r", cRad);
+        document.getElementById("c3").setAttribute("fill", cDefaultColor);
+        //
+
+        document.getElementById("line31o").setAttribute("x1", centerX - halfDiag - cRad);
+        document.getElementById("line31o").setAttribute("y1", centerY + cRad);
+        document.getElementById("line31o").setAttribute("x2", centerX - halfDiag - cRad);
+        document.getElementById("line31o").setAttribute("y2", centerY + halfDiag);
+
+        document.getElementById("line32o").setAttribute("x1", centerX - halfDiag);
+        document.getElementById("line32o").setAttribute("y1", centerY + halfDiag + cRad);
+        document.getElementById("line32o").setAttribute("x2", centerX - cRad);
+        document.getElementById("line32o").setAttribute("y2", centerY + halfDiag + cRad);
+
+        //upper left part 
+
+        document.getElementById("c41").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c42").setAttribute("cx", centerX);
+        document.getElementById("c43").setAttribute("cx", centerX + halfDiag + cRad);
+        document.getElementById("c44").setAttribute("cx", centerX);
+
+        document.getElementById("c41").setAttribute("cy", centerY);
+        document.getElementById("c42").setAttribute("cy", centerY - halfDiag - cRad);
+        document.getElementById("c43").setAttribute("cy", centerY);
+        document.getElementById("c44").setAttribute("cy", centerY + halfDiag + cRad);
+
+        document.getElementById("c41").setAttribute("r", cRad);
+        document.getElementById("c42").setAttribute("r", cRad);
+        document.getElementById("c43").setAttribute("r", cRad);
+        document.getElementById("c44").setAttribute("r", cRad);
+
+        document.getElementById("c41").setAttribute("fill", cDefaultColor);
+        document.getElementById("c42").setAttribute("fill", cDefaultColor);
+        document.getElementById("c43").setAttribute("fill", cDefaultColor);
+        document.getElementById("c44").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("line41").setAttribute("x1", centerX - halfDiag - cRad + side);
+        document.getElementById("line41").setAttribute("y1", centerY - side);
+        document.getElementById("line41").setAttribute("x2", centerX - side);
+        document.getElementById("line41").setAttribute("y2", centerY - halfDiag - cRad + side);
+
+        document.getElementById("line42").setAttribute("x1", centerX + side);
+        document.getElementById("line42").setAttribute("y1", centerY - halfDiag - cRad + side);
+        document.getElementById("line42").setAttribute("x2", centerX + halfDiag + cRad - side);
+        document.getElementById("line42").setAttribute("y2", centerY - side);
+
+        document.getElementById("line43").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("line43").setAttribute("y1", centerY + side);
+        document.getElementById("line43").setAttribute("x2", centerX + side);
+        document.getElementById("line43").setAttribute("y2", centerY + halfDiag + cRad - side);
+
+        document.getElementById("line44").setAttribute("x1", centerX - side);
+        document.getElementById("line44").setAttribute("y1", centerY + halfDiag + cRad - side);
+        document.getElementById("line44").setAttribute("x2", centerX - halfDiag - cRad + side);
+        document.getElementById("line44").setAttribute("y2", centerY + side);
+
+        //left triangle
+
+        document.getElementById("c4tri1").setAttribute("cx", centerX - 2 * halfDiag - cRad);
+        document.getElementById("c4tri2").setAttribute("cx", centerX - 2 * halfDiag - cRad);
+        document.getElementById("c4tri3").setAttribute("cx", centerX - 3 * halfDiag - cRad); //most left one
+
+        document.getElementById("c4tri1").setAttribute("cy", centerY - halfDiag - cRad);
+        document.getElementById("c4tri2").setAttribute("cy", centerY - 2 * halfDiag - cRad);
+        document.getElementById("c4tri3").setAttribute("cy", centerY - halfDiag - cRad);
+
+        document.getElementById("c4tri1").setAttribute("r", cRad);
+        document.getElementById("c4tri2").setAttribute("r", cRad);
+        document.getElementById("c4tri3").setAttribute("r", cRad);
+
+        document.getElementById("c4tri1").setAttribute("fill", cDefaultColor);
+        document.getElementById("c4tri2").setAttribute("fill", cDefaultColor);
+        document.getElementById("c4tri3").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("linetri1").setAttribute("x1", centerX - halfDiag - cRad - side);
+        document.getElementById("linetri1").setAttribute("y1", centerY - side);
+        document.getElementById("linetri1").setAttribute("x2", centerX - 2 * halfDiag - cRad + side);
+        document.getElementById("linetri1").setAttribute("y2", centerY - halfDiag - cRad + side);
+
+        document.getElementById("linetri2").setAttribute("x1", centerX - 2 * halfDiag - cRad);
+        document.getElementById("linetri2").setAttribute("y1", centerY - halfDiag - 2 * cRad);
+        document.getElementById("linetri2").setAttribute("x2", centerX - 2 * halfDiag - cRad);
+        document.getElementById("linetri2").setAttribute("y2", centerY - 2 * halfDiag);
+
+        document.getElementById("linetri3").setAttribute("x1", centerX - 2 * halfDiag - cRad - side);
+        document.getElementById("linetri3").setAttribute("y1", centerY - 2 * halfDiag - cRad + side);
+        document.getElementById("linetri3").setAttribute("x2", centerX - 3 * halfDiag - cRad + side);
+        document.getElementById("linetri3").setAttribute("y2", centerY - halfDiag - cRad - side);
+
+        document.getElementById("linetri4").setAttribute("x1", centerX - 3 * halfDiag);
+        document.getElementById("linetri4").setAttribute("y1", centerY - halfDiag - cRad);
+        document.getElementById("linetri4").setAttribute("x2", centerX - 2 * halfDiag - 2 * cRad);
+        document.getElementById("linetri4").setAttribute("y2", centerY - halfDiag - cRad);
+
+        //top part
+        document.getElementById("c51").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c52").setAttribute("cx", centerX);
+        document.getElementById("c53").setAttribute("cx", centerX + halfDiag + cRad);
+        document.getElementById("c54").setAttribute("cx", centerX);
+
+        document.getElementById("c51").setAttribute("cy", centerY);
+        document.getElementById("c52").setAttribute("cy", centerY - halfDiag - cRad);
+        document.getElementById("c53").setAttribute("cy", centerY);
+        document.getElementById("c54").setAttribute("cy", centerY + halfDiag + cRad);
+
+        document.getElementById("c51").setAttribute("r", cRad);
+        document.getElementById("c52").setAttribute("r", cRad);
+        document.getElementById("c53").setAttribute("r", cRad);
+        document.getElementById("c54").setAttribute("r", cRad);
+
+        document.getElementById("c51").setAttribute("fill", cDefaultColor);
+        document.getElementById("c52").setAttribute("fill", cDefaultColor);
+        document.getElementById("c53").setAttribute("fill", cDefaultColor);
+        document.getElementById("c54").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("line51").setAttribute("x1", centerX - halfDiag - cRad + side);
+        document.getElementById("line51").setAttribute("y1", centerY - side);
+        document.getElementById("line51").setAttribute("x2", centerX - side);
+        document.getElementById("line51").setAttribute("y2", centerY - halfDiag - cRad + side);
+
+        document.getElementById("line52").setAttribute("x1", centerX + side);
+        document.getElementById("line52").setAttribute("y1", centerY - halfDiag - cRad + side);
+        document.getElementById("line52").setAttribute("x2", centerX + halfDiag + cRad - side);
+        document.getElementById("line52").setAttribute("y2", centerY - side);
+
+        document.getElementById("line53").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("line53").setAttribute("y1", centerY + side);
+        document.getElementById("line53").setAttribute("x2", centerX + side);
+        document.getElementById("line53").setAttribute("y2", centerY + halfDiag + cRad - side);
+
+        document.getElementById("line54").setAttribute("x1", centerX - side);
+        document.getElementById("line54").setAttribute("y1", centerY + halfDiag + cRad - side);
+        document.getElementById("line54").setAttribute("x2", centerX - halfDiag - cRad + side);
+        document.getElementById("line54").setAttribute("y2", centerY + side);
+
+        //top circles of top part    
+        document.getElementById("c5tri1").setAttribute("cx", centerX); //kentrikos
+        document.getElementById("c5tri2").setAttribute("cx", centerX + halfDiag + cRad); //deksia tou kentrikou
+        document.getElementById("c5tri3").setAttribute("cx", centerX);
+        document.getElementById("c5tri4").setAttribute("cx", centerX - halfDiag - cRad);
+
+        document.getElementById("c5tri1").setAttribute("cy", centerY - 2 * halfDiag - cRad);
+        document.getElementById("c5tri2").setAttribute("cy", centerY - 2 * halfDiag - cRad);
+        document.getElementById("c5tri3").setAttribute("cy", centerY - 3 * halfDiag - cRad);
+        document.getElementById("c5tri4").setAttribute("cy", centerY - 2 * halfDiag - cRad);
+
+        document.getElementById("c5tri1").setAttribute("r", cRad);
+        document.getElementById("c5tri2").setAttribute("r", cRad);
+        document.getElementById("c5tri3").setAttribute("r", cRad);
+        document.getElementById("c5tri4").setAttribute("r", cRad);
+
+        document.getElementById("c5tri1").setAttribute("fill", cDefaultColor);
+        document.getElementById("c5tri2").setAttribute("fill", cDefaultColor);
+        document.getElementById("c5tri3").setAttribute("fill", cDefaultColor);
+        document.getElementById("c5tri4").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("linetop1").setAttribute("x1", centerX);
+        document.getElementById("linetop1").setAttribute("y1", centerY - halfDiag - 2 * cRad);
+        document.getElementById("linetop1").setAttribute("x2", centerX);
+        document.getElementById("linetop1").setAttribute("y2", centerY - 2 * halfDiag);
+
+        document.getElementById("linetop2").setAttribute("x1", centerX + cRad);
+        document.getElementById("linetop2").setAttribute("y1", centerY - 2 * halfDiag - cRad);
+        document.getElementById("linetop2").setAttribute("x2", centerX + halfDiag);
+        document.getElementById("linetop2").setAttribute("y2", centerY - 2 * halfDiag - cRad);
+
+        document.getElementById("linetop3").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("linetop3").setAttribute("y1", centerY - 2 * halfDiag - cRad - side);
+        document.getElementById("linetop3").setAttribute("x2", centerX + side);
+        document.getElementById("linetop3").setAttribute("y2", centerY - 3 * halfDiag - cRad + side);
+
+        document.getElementById("linetop4").setAttribute("x1", centerX - side);
+        document.getElementById("linetop4").setAttribute("y1", centerY - 3 * halfDiag - cRad + side);
+        document.getElementById("linetop4").setAttribute("x2", centerX - halfDiag - cRad + side);
+        document.getElementById("linetop4").setAttribute("y2", centerY - 2 * halfDiag - cRad - side);
+
+        document.getElementById("linetop5").setAttribute("x1", centerX - halfDiag);
+        document.getElementById("linetop5").setAttribute("y1", centerY - 2 * halfDiag - cRad);
+        document.getElementById("linetop5").setAttribute("x2", centerX - cRad);
+        document.getElementById("linetop5").setAttribute("y2", centerY - 2 * halfDiag - cRad);
+
+        document.getElementById("linetop6").setAttribute("x1", centerX - halfDiag - cRad);
+        document.getElementById("linetop6").setAttribute("y1", centerY - 2 * halfDiag);
+        document.getElementById("linetop6").setAttribute("x2", centerX - halfDiag - cRad);
+        document.getElementById("linetop6").setAttribute("y2", centerY - cRad);
+
+        document.getElementById("linetop7").setAttribute("x1", centerX + halfDiag + cRad);
+        document.getElementById("linetop7").setAttribute("y1", centerY - 2 * halfDiag);
+        document.getElementById("linetop7").setAttribute("x2", centerX + halfDiag + cRad);
+        document.getElementById("linetop7").setAttribute("y2", centerY - cRad);
+
+        //bottom right part
+
+        document.getElementById("c61").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c62").setAttribute("cx", centerX);
+        document.getElementById("c63").setAttribute("cx", centerX + halfDiag + cRad);
+        document.getElementById("c64").setAttribute("cx", centerX);
+
+        document.getElementById("c61").setAttribute("cy", centerY);
+        document.getElementById("c62").setAttribute("cy", centerY - halfDiag - cRad);
+        document.getElementById("c63").setAttribute("cy", centerY);
+        document.getElementById("c64").setAttribute("cy", centerY + halfDiag + cRad);
+
+        document.getElementById("c61").setAttribute("r", cRad);
+        document.getElementById("c62").setAttribute("r", cRad);
+        document.getElementById("c63").setAttribute("r", cRad);
+        document.getElementById("c64").setAttribute("r", cRad);
+
+        document.getElementById("c61").setAttribute("fill", cDefaultColor);
+        document.getElementById("c62").setAttribute("fill", cDefaultColor);
+        document.getElementById("c63").setAttribute("fill", cDefaultColor);
+        document.getElementById("c64").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("line61").setAttribute("x1", centerX - halfDiag - cRad + side);
+        document.getElementById("line61").setAttribute("y1", centerY - side);
+        document.getElementById("line61").setAttribute("x2", centerX - side);
+        document.getElementById("line61").setAttribute("y2", centerY - halfDiag - cRad + side);
+
+        document.getElementById("line62").setAttribute("x1", centerX + side);
+        document.getElementById("line62").setAttribute("y1", centerY - halfDiag - cRad + side);
+        document.getElementById("line62").setAttribute("x2", centerX + halfDiag + cRad - side);
+        document.getElementById("line62").setAttribute("y2", centerY - side);
+
+        document.getElementById("line63").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("line63").setAttribute("y1", centerY + side);
+        document.getElementById("line63").setAttribute("x2", centerX + side);
+        document.getElementById("line63").setAttribute("y2", centerY + halfDiag + cRad - side);
+
+        document.getElementById("line64").setAttribute("x1", centerX - side);
+        document.getElementById("line64").setAttribute("y1", centerY + halfDiag + cRad - side);
+        document.getElementById("line64").setAttribute("x2", centerX - halfDiag - cRad + side);
+        document.getElementById("line64").setAttribute("y2", centerY + side);
+
+        //new parts bottom right
+
+        document.getElementById("c6w1").setAttribute("cx", centerX - 3 * halfDiag - cRad);
+        document.getElementById("c6w2").setAttribute("cx", centerX - halfDiag - cRad);
+        document.getElementById("c6w3").setAttribute("cx", centerX);
+        document.getElementById("c6w4").setAttribute("cx", centerX + halfDiag / 2 + cRad);
+        document.getElementById("c6w5").setAttribute("cx", centerX + halfDiag + cRad);
+        document.getElementById("c6w6").setAttribute("cx", centerX + halfDiag + cRad);
+
+        document.getElementById("c6w1").setAttribute("cy", centerY + halfDiag + cRad);
+        document.getElementById("c6w2").setAttribute("cy", centerY + 3 * halfDiag + cRad);
+        document.getElementById("c6w3").setAttribute("cy", centerY + 2 * halfDiag + cRad);
+        document.getElementById("c6w4").setAttribute("cy", centerY + 3 * halfDiag + cRad);
+        document.getElementById("c6w5").setAttribute("cy", centerY + 2 * halfDiag + cRad);
+        document.getElementById("c6w6").setAttribute("cy", centerY + halfDiag + cRad);
+
+        document.getElementById("c6w1").setAttribute("r", cRad);
+        document.getElementById("c6w2").setAttribute("r", cRad);
+        document.getElementById("c6w3").setAttribute("r", cRad);
+        document.getElementById("c6w4").setAttribute("r", cRad);
+        document.getElementById("c6w5").setAttribute("r", cRad);
+        document.getElementById("c6w6").setAttribute("r", cRad);
+
+        document.getElementById("c6w1").setAttribute("fill", cDefaultColor);
+        document.getElementById("c6w2").setAttribute("fill", cDefaultColor);
+        document.getElementById("c6w3").setAttribute("fill", cDefaultColor);
+        document.getElementById("c6w4").setAttribute("fill", cDefaultColor);
+        document.getElementById("c6w5").setAttribute("fill", cDefaultColor);
+        document.getElementById("c6w6").setAttribute("fill", cDefaultColor);
+
+        document.getElementById("line6of91").setAttribute("x1", centerX - halfDiag - cRad - side);
+        document.getElementById("line6of91").setAttribute("y1", centerY + side);
+        document.getElementById("line6of91").setAttribute("x2", centerX - 3 * halfDiag - cRad + side);
+        document.getElementById("line6of91").setAttribute("y2", centerY + halfDiag + cRad - side);
+
+        document.getElementById("line6of92").setAttribute("x1", centerX - 3 * halfDiag - cRad + side);
+        document.getElementById("line6of92").setAttribute("y1", centerY + halfDiag + cRad + side);
+        document.getElementById("line6of92").setAttribute("x2", centerX - halfDiag - cRad - side);
+        document.getElementById("line6of92").setAttribute("y2", centerY + 3 * halfDiag + cRad - side);
+
+        document.getElementById("line6of93").setAttribute("x1", centerX - halfDiag - cRad + side);
+        document.getElementById("line6of93").setAttribute("y1", centerY + 3 * halfDiag + cRad - side);
+        document.getElementById("line6of93").setAttribute("x2", centerX - side);
+        document.getElementById("line6of93").setAttribute("y2", centerY + 2 * halfDiag + cRad + side);
+
+        document.getElementById("line6of94").setAttribute("x1", centerX);
+        document.getElementById("line6of94").setAttribute("y1", centerY + 2 * halfDiag);
+        document.getElementById("line6of94").setAttribute("x2", centerX);
+        document.getElementById("line6of94").setAttribute("y2", centerY + halfDiag + 2 * cRad);
+
+        document.getElementById("line6of95").setAttribute("x1", centerX + cRad);
+        document.getElementById("line6of95").setAttribute("y1", centerY + halfDiag + cRad);
+        document.getElementById("line6of95").setAttribute("x2", centerX + halfDiag);
+        document.getElementById("line6of95").setAttribute("y2", centerY + halfDiag + cRad);
+
+        document.getElementById("line6of96").setAttribute("x1", centerX + halfDiag + cRad);
+        document.getElementById("line6of96").setAttribute("y1", centerY + cRad);
+        document.getElementById("line6of96").setAttribute("x2", centerX + halfDiag + cRad);
+        document.getElementById("line6of96").setAttribute("y2", centerY + halfDiag);
+
+        document.getElementById("line6of97").setAttribute("x1", centerX + halfDiag + cRad);
+        document.getElementById("line6of97").setAttribute("y1", centerY + halfDiag + 2 * cRad);
+        document.getElementById("line6of97").setAttribute("x2", centerX + halfDiag + cRad);
+        document.getElementById("line6of97").setAttribute("y2", centerY + 2 * halfDiag);
+
+        document.getElementById("line6of98").setAttribute("x1", centerX + halfDiag + cRad - side);
+        document.getElementById("line6of98").setAttribute("y1", centerY + 2 * halfDiag + cRad + side);
+        document.getElementById("line6of98").setAttribute("x2", centerX + halfDiag / 2 + cRad + side);
+        document.getElementById("line6of98").setAttribute("y2", centerY + 3 * halfDiag + cRad - side);
+
+        document.getElementById("line6of99").setAttribute("x1", centerX + halfDiag / 2 + cRad - side);
+        document.getElementById("line6of99").setAttribute("y1", centerY + 3 * halfDiag + cRad - side);
+        document.getElementById("line6of99").setAttribute("x2", centerX + side);
+        document.getElementById("line6of99").setAttribute("y2", centerY + 2 * halfDiag + cRad + side);
+
+        document.getElementById("line6of910").setAttribute("x1", centerX + side);
+        document.getElementById("line6of910").setAttribute("y1", centerY + halfDiag + cRad + side);
+        document.getElementById("line6of910").setAttribute("x2", centerX + halfDiag + cRad - side);
+        document.getElementById("line6of910").setAttribute("y2", centerY + 2 * halfDiag + cRad - side);
+    
+        ///////////////////////////////////animations
+        
+        //right part
+    
+        document.getElementById("c21move").setAttribute("attributeName", "cx");
+        document.getElementById("c21move").setAttribute("from", centerX - halfDiag - cRad);
+        document.getElementById("c21move").setAttribute("to", centerX - halfDiag - cRad + 4*halfDiag);
+        document.getElementById("c21move").setAttribute("dur", "2s");
+    
+        document.getElementById("c22move").setAttribute("attributeName", "cx");
+        document.getElementById("c22move").setAttribute("from", centerX);
+        document.getElementById("c22move").setAttribute("to", centerX+4*halfDiag);
+        document.getElementById("c22move").setAttribute("dur", "2s");
+    
+        document.getElementById("c23move").setAttribute("attributeName", "cx");
+        document.getElementById("c23move").setAttribute("from", centerX + halfDiag + cRad);
+        document.getElementById("c23move").setAttribute("to", centerX + halfDiag + cRad + 4*halfDiag);
+        document.getElementById("c23move").setAttribute("dur", "2s");
+    
+        document.getElementById("c24move").setAttribute("attributeName", "cx");
+        document.getElementById("c24move").setAttribute("from", centerX);
+        document.getElementById("c24move").setAttribute("to", centerX+4*halfDiag);
+        document.getElementById("c24move").setAttribute("dur", "2s");
+    
+        document.getElementById("line21x1").setAttribute("attributeName", "x1");
+        document.getElementById("line21x1").setAttribute("from", centerX - halfDiag - cRad + side);
+        document.getElementById("line21x1").setAttribute("to", centerX - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line21x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line21x2").setAttribute("attributeName", "x2");
+        document.getElementById("line21x2").setAttribute("from", centerX - side);
+        document.getElementById("line21x2").setAttribute("to", centerX - side+4*halfDiag);
+        document.getElementById("line21x2").setAttribute("dur", "2s");
+        
+        document.getElementById("line22x1").setAttribute("attributeName", "x1");
+        document.getElementById("line22x1").setAttribute("from", centerX + side);
+        document.getElementById("line22x1").setAttribute("to", centerX + side+4*halfDiag);
+        document.getElementById("line22x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line22x2").setAttribute("attributeName", "x2");
+        document.getElementById("line22x2").setAttribute("from", centerX + halfDiag + cRad - side);
+        document.getElementById("line22x2").setAttribute("to", centerX + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line22x2").setAttribute("dur", "2s");
+
+        document.getElementById("line23x1").setAttribute("attributeName", "x1");
+        document.getElementById("line23x1").setAttribute("from", centerX + halfDiag + cRad - side);
+        document.getElementById("line23x1").setAttribute("to", centerX + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line23x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line23x2").setAttribute("attributeName", "x2");
+        document.getElementById("line23x2").setAttribute("from", centerX + side);
+        document.getElementById("line23x2").setAttribute("to", centerX + side+4*halfDiag);
+        document.getElementById("line23x2").setAttribute("dur", "2s");
+    
+        document.getElementById("line24x1").setAttribute("attributeName", "x1");
+        document.getElementById("line24x1").setAttribute("from", centerX - side);
+        document.getElementById("line24x1").setAttribute("to", centerX - side+4*halfDiag);
+        document.getElementById("line24x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line24x2").setAttribute("attributeName", "x2");
+        document.getElementById("line24x2").setAttribute("from", centerX - halfDiag - cRad + side);
+        document.getElementById("line24x2").setAttribute("to", centerX - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line24x2").setAttribute("dur", "2s");
+    
+        document.getElementById("tri1move").setAttribute("attributeName", "cx");
+        document.getElementById("tri1move").setAttribute("from", centerX + 2 * halfDiag + 2 * cRad);
+        document.getElementById("tri1move").setAttribute("to", centerX + 2 * halfDiag + 2 * cRad+4*halfDiag);
+        document.getElementById("tri1move").setAttribute("dur", "2s");
+    
+        document.getElementById("tri2move").setAttribute("attributeName", "cx");
+        document.getElementById("tri2move").setAttribute("from", centerX + 2 * halfDiag + 2 * cRad);
+        document.getElementById("tri2move").setAttribute("to", centerX + 2 * halfDiag + 2 * cRad+4*halfDiag);
+        document.getElementById("tri2move").setAttribute("dur", "2s");
+    
+        document.getElementById("line1trmovex1").setAttribute("attributeName", "x1");
+        document.getElementById("line1trmovex1").setAttribute("from", centerX + halfDiag + cRad + side);
+        document.getElementById("line1trmovex1").setAttribute("to", centerX + halfDiag + cRad + side+4*halfDiag);
+        document.getElementById("line1trmovex1").setAttribute("dur", "2s");
+    
+        document.getElementById("line1trmovex2").setAttribute("attributeName", "x2");
+        document.getElementById("line1trmovex2").setAttribute("from", centerX + 2 * halfDiag + 2 * cRad - side);
+        document.getElementById("line1trmovex2").setAttribute("to", centerX + 2 * halfDiag + 2 * cRad - side+4*halfDiag);
+        document.getElementById("line1trmovex2").setAttribute("dur", "2s");
+    
+        document.getElementById("line2trmovex1").setAttribute("attributeName", "x1");
+        document.getElementById("line2trmovex1").setAttribute("from", centerX + 2 * halfDiag + 2 * cRad);
+        document.getElementById("line2trmovex1").setAttribute("to", centerX + 2 * halfDiag + 2 * cRad+4*halfDiag);
+        document.getElementById("line2trmovex1").setAttribute("dur", "2s");
+    
+        document.getElementById("line2trmovex2").setAttribute("attributeName", "x2");
+        document.getElementById("line2trmovex2").setAttribute("from", centerX + 2 * halfDiag + 2 * cRad);
+        document.getElementById("line2trmovex2").setAttribute("to", centerX + 2 * halfDiag + 2 * cRad+4*halfDiag);
+        document.getElementById("line2trmovex2").setAttribute("dur", "2s");
+    
+        document.getElementById("line3trmovex1").setAttribute("attributeName", "x1");
+        document.getElementById("line3trmovex1").setAttribute("from", centerX + 2 * halfDiag + 2 * cRad - side);
+        document.getElementById("line3trmovex1").setAttribute("to", centerX + 2 * halfDiag + 2 * cRad - side+4*halfDiag);
+        document.getElementById("line3trmovex1").setAttribute("dur", "2s");
+    
+        document.getElementById("line3trmovex2").setAttribute("attributeName", "x2");
+        document.getElementById("line3trmovex2").setAttribute("from", centerX + halfDiag + cRad + side);
+        document.getElementById("line3trmovex2").setAttribute("to", centerX + halfDiag + cRad + side+4*halfDiag);
+        document.getElementById("line3trmovex2").setAttribute("dur", "2s");
+    
+        //left part
+    
+        document.getElementById("c41move").setAttribute("attributeName", "cx");
+        document.getElementById("c41move").setAttribute("from", centerX - halfDiag - cRad);
+        document.getElementById("c41move").setAttribute("to", centerX - halfDiag - cRad - 4*halfDiag);
+        document.getElementById("c41move").setAttribute("dur", "2s");
+    
+        document.getElementById("c42move").setAttribute("attributeName", "cx");
+        document.getElementById("c42move").setAttribute("from", centerX);
+        document.getElementById("c42move").setAttribute("to", centerX-4*halfDiag);
+        document.getElementById("c42move").setAttribute("dur", "2s");
+    
+        document.getElementById("c43move").setAttribute("attributeName", "cx");
+        document.getElementById("c43move").setAttribute("from", centerX + halfDiag + cRad);
+        document.getElementById("c43move").setAttribute("to", centerX + halfDiag + cRad - 4*halfDiag);
+        document.getElementById("c43move").setAttribute("dur", "2s");
+    
+        document.getElementById("c44move").setAttribute("attributeName", "cx");
+        document.getElementById("c44move").setAttribute("from", centerX);
+        document.getElementById("c44move").setAttribute("to", centerX-4*halfDiag);
+        document.getElementById("c44move").setAttribute("dur", "2s");
+    
+        document.getElementById("line41x1").setAttribute("attributeName", "x1");
+        document.getElementById("line41x1").setAttribute("from", centerX - halfDiag - cRad + side);
+        document.getElementById("line41x1").setAttribute("to", centerX - halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("line41x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line41x2").setAttribute("attributeName", "x2");
+        document.getElementById("line41x2").setAttribute("from", centerX - side);
+        document.getElementById("line41x2").setAttribute("to", centerX - side-4*halfDiag);
+        document.getElementById("line41x2").setAttribute("dur", "2s");
+        
+        document.getElementById("line42x1").setAttribute("attributeName", "x1");
+        document.getElementById("line42x1").setAttribute("from", centerX + side);
+        document.getElementById("line42x1").setAttribute("to", centerX + side-4*halfDiag);
+        document.getElementById("line42x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line42x2").setAttribute("attributeName", "x2");
+        document.getElementById("line42x2").setAttribute("from", centerX + halfDiag + cRad - side);
+        document.getElementById("line42x2").setAttribute("to", centerX + halfDiag + cRad - side-4*halfDiag);
+        document.getElementById("line42x2").setAttribute("dur", "2s");
+
+        document.getElementById("line43x1").setAttribute("attributeName", "x1");
+        document.getElementById("line43x1").setAttribute("from", centerX + halfDiag + cRad - side);
+        document.getElementById("line43x1").setAttribute("to", centerX + halfDiag + cRad - side-4*halfDiag);
+        document.getElementById("line43x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line43x2").setAttribute("attributeName", "x2");
+        document.getElementById("line43x2").setAttribute("from", centerX + side);
+        document.getElementById("line43x2").setAttribute("to", centerX + side-4*halfDiag);
+        document.getElementById("line43x2").setAttribute("dur", "2s");
+    
+        document.getElementById("line44x1").setAttribute("attributeName", "x1");
+        document.getElementById("line44x1").setAttribute("from", centerX - side);
+        document.getElementById("line44x1").setAttribute("to", centerX - side-4*halfDiag);
+        document.getElementById("line44x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line44x2").setAttribute("attributeName", "x2");
+        document.getElementById("line44x2").setAttribute("from", centerX - halfDiag - cRad + side);
+        document.getElementById("line44x2").setAttribute("to", centerX - halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("line44x2").setAttribute("dur", "2s");
+    
+        document.getElementById("c4tri1move").setAttribute("attributeName", "cx");
+        document.getElementById("c4tri1move").setAttribute("from", centerX - 2 * halfDiag - cRad);
+        document.getElementById("c4tri1move").setAttribute("to", centerX - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("c4tri1move").setAttribute("dur", "2s");
+    
+        document.getElementById("c4tri2move").setAttribute("attributeName", "cx");
+        document.getElementById("c4tri2move").setAttribute("from", centerX - 2 * halfDiag - cRad);
+        document.getElementById("c4tri2move").setAttribute("to", centerX - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("c4tri2move").setAttribute("dur", "2s");
+    
+        document.getElementById("c4tri3move").setAttribute("attributeName", "cx");
+        document.getElementById("c4tri3move").setAttribute("from", centerX - 3 * halfDiag - cRad);
+        document.getElementById("c4tri3move").setAttribute("to", centerX - 3 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("c4tri3move").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri1x1").setAttribute("attributeName", "x1");
+        document.getElementById("linetri1x1").setAttribute("from", centerX - halfDiag - cRad - side);
+        document.getElementById("linetri1x1").setAttribute("to", centerX - halfDiag - cRad - side-4*halfDiag);
+        document.getElementById("linetri1x1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri1x2").setAttribute("attributeName", "x2");
+        document.getElementById("linetri1x2").setAttribute("from", centerX - 2 * halfDiag - cRad + side);
+        document.getElementById("linetri1x2").setAttribute("to", centerX - 2 * halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("linetri1x2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri2x1").setAttribute("attributeName", "x1");
+        document.getElementById("linetri2x1").setAttribute("from", centerX - 2 * halfDiag - cRad);
+        document.getElementById("linetri2x1").setAttribute("to", centerX - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("linetri2x1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri2x2").setAttribute("attributeName", "x2");
+        document.getElementById("linetri2x2").setAttribute("from", centerX - 2 * halfDiag - cRad);
+        document.getElementById("linetri2x2").setAttribute("to", centerX - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("linetri2x2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri3x1").setAttribute("attributeName", "x1");
+        document.getElementById("linetri3x1").setAttribute("from", centerX - 2 * halfDiag - cRad - side);
+        document.getElementById("linetri3x1").setAttribute("to", centerX - 2 * halfDiag - cRad - side-4*halfDiag);
+        document.getElementById("linetri3x1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri3x2").setAttribute("attributeName", "x2");
+        document.getElementById("linetri3x2").setAttribute("from", centerX - 3 * halfDiag - cRad + side);
+        document.getElementById("linetri3x2").setAttribute("to", centerX - 3 * halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("linetri3x2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri4x1").setAttribute("attributeName", "x1");
+        document.getElementById("linetri4x1").setAttribute("from", centerX - 3 * halfDiag);
+        document.getElementById("linetri4x1").setAttribute("to", centerX - 3 * halfDiag-4*halfDiag);
+        document.getElementById("linetri4x1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetri4x2").setAttribute("attributeName", "x2");
+        document.getElementById("linetri4x2").setAttribute("from", centerX - 2 * halfDiag - 2 * cRad);
+        document.getElementById("linetri4x2").setAttribute("to", centerX - 2 * halfDiag - 2 * cRad-4*halfDiag);
+        document.getElementById("linetri4x2").setAttribute("dur", "2s");
+    
+        //bottom part
+    
+        document.getElementById("c61move").setAttribute("attributeName", "cy");
+        document.getElementById("c61move").setAttribute("from", centerY);
+        document.getElementById("c61move").setAttribute("to", centerY+ 4*halfDiag);
+        document.getElementById("c61move").setAttribute("dur", "2s");
+    
+        document.getElementById("c62move").setAttribute("attributeName", "cy");
+        document.getElementById("c62move").setAttribute("from", centerY - halfDiag - cRad);
+        document.getElementById("c62move").setAttribute("to", centerY - halfDiag - cRad+4*halfDiag);
+        document.getElementById("c62move").setAttribute("dur", "2s");
+    
+        document.getElementById("c63move").setAttribute("attributeName", "cy");
+        document.getElementById("c63move").setAttribute("from", centerY);
+        document.getElementById("c63move").setAttribute("to", centerY+ 4*halfDiag);
+        document.getElementById("c63move").setAttribute("dur", "2s");
+    
+        document.getElementById("c64move").setAttribute("attributeName", "cy");
+        document.getElementById("c64move").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("c64move").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("c64move").setAttribute("dur", "2s");
+    
+        document.getElementById("line61y1").setAttribute("attributeName", "y1");
+        document.getElementById("line61y1").setAttribute("from", centerY - side);
+        document.getElementById("line61y1").setAttribute("to", centerY - side+4*halfDiag);
+        document.getElementById("line61y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line61y2").setAttribute("attributeName", "y2");
+        document.getElementById("line61y2").setAttribute("from", centerY - halfDiag - cRad + side);
+        document.getElementById("line61y2").setAttribute("to", centerY - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line61y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line62y1").setAttribute("attributeName", "y1");
+        document.getElementById("line62y1").setAttribute("from", centerY - halfDiag - cRad + side);
+        document.getElementById("line62y1").setAttribute("to", centerY - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line62y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line62y2").setAttribute("attributeName", "y2");
+        document.getElementById("line62y2").setAttribute("from", centerY - side);
+        document.getElementById("line62y2").setAttribute("to", centerY - side+4*halfDiag);
+        document.getElementById("line62y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line63y1").setAttribute("attributeName", "y1");
+        document.getElementById("line63y1").setAttribute("from", centerY + side);
+        document.getElementById("line63y1").setAttribute("to", centerY + side+4*halfDiag);
+        document.getElementById("line63y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line63y2").setAttribute("attributeName", "y2");
+        document.getElementById("line63y2").setAttribute("from", centerY + halfDiag + cRad - side);
+        document.getElementById("line63y2").setAttribute("to", centerY + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line63y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line64y1").setAttribute("attributeName", "y1");
+        document.getElementById("line64y1").setAttribute("from", centerY + halfDiag + cRad - side);
+        document.getElementById("line64y1").setAttribute("to", centerY + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line64y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line64y2").setAttribute("attributeName", "y2");
+        document.getElementById("line64y2").setAttribute("from", centerY + side);
+        document.getElementById("line64y2").setAttribute("to", centerY + side+4*halfDiag);
+        document.getElementById("line64y2").setAttribute("dur", "2s");
+    
+        document.getElementById("c6w1move").setAttribute("attributeName", "cy");
+        document.getElementById("c6w1move").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("c6w1move").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("c6w1move").setAttribute("dur", "2s");
+    
+        document.getElementById("c6w2move").setAttribute("attributeName", "cy");
+        document.getElementById("c6w2move").setAttribute("from", centerY + 3 * halfDiag + cRad);
+        document.getElementById("c6w2move").setAttribute("to", centerY + 3 * halfDiag + cRad+4*halfDiag);
+        document.getElementById("c6w2move").setAttribute("dur", "2s");
+    
+        document.getElementById("c6w3move").setAttribute("attributeName", "cy");
+        document.getElementById("c6w3move").setAttribute("from", centerY + 2 * halfDiag + cRad);
+        document.getElementById("c6w3move").setAttribute("to", centerY + 2 * halfDiag + cRad+4*halfDiag);
+        document.getElementById("c6w3move").setAttribute("dur", "2s");
+    
+        document.getElementById("c6w4move").setAttribute("attributeName", "cy");
+        document.getElementById("c6w4move").setAttribute("from", centerY + 3 * halfDiag + cRad);
+        document.getElementById("c6w4move").setAttribute("to", centerY + 3 * halfDiag + cRad+4*halfDiag);
+        document.getElementById("c6w4move").setAttribute("dur", "2s");
+    
+        document.getElementById("c6w5move").setAttribute("attributeName", "cy");
+        document.getElementById("c6w5move").setAttribute("from", centerY + 2 * halfDiag + cRad);
+        document.getElementById("c6w5move").setAttribute("to", centerY + 2 * halfDiag + cRad+4*halfDiag);
+        document.getElementById("c6w5move").setAttribute("dur", "2s");
+    
+        document.getElementById("c6w6move").setAttribute("attributeName", "cy");
+        document.getElementById("c6w6move").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("c6w6move").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("c6w6move").setAttribute("dur", "2s");
+     
+        //bottom lines
+    
+        document.getElementById("line6of91y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of91y1").setAttribute("from", centerY + side);
+        document.getElementById("line6of91y1").setAttribute("to", centerY + side+4*halfDiag);
+        document.getElementById("line6of91y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of91y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of91y2").setAttribute("from", centerY + halfDiag + cRad - side);
+        document.getElementById("line6of91y2").setAttribute("to", centerY + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line6of91y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of92y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of92y1").setAttribute("from", centerY + halfDiag + cRad + side);
+        document.getElementById("line6of92y1").setAttribute("to", centerY + halfDiag + cRad + side+4*halfDiag);
+        document.getElementById("line6of92y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of92y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of92y2").setAttribute("from", centerY + 3 * halfDiag + cRad - side);
+        document.getElementById("line6of92y2").setAttribute("to", centerY + 3 * halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line6of92y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of93y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of93y1").setAttribute("from", centerY + 3 * halfDiag + cRad - side);
+        document.getElementById("line6of93y1").setAttribute("to", centerY + 3 * halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line6of93y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of93y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of93y2").setAttribute("from", centerY + 2 * halfDiag + cRad + side);
+        document.getElementById("line6of93y2").setAttribute("to", centerY + 2 * halfDiag + cRad + side+4*halfDiag);
+        document.getElementById("line6of93y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of94y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of94y1").setAttribute("from", centerY + 2 * halfDiag);
+        document.getElementById("line6of94y1").setAttribute("to", centerY + 2 * halfDiag+4*halfDiag);
+        document.getElementById("line6of94y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of94y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of94y2").setAttribute("from", centerY + halfDiag + 2 * cRad);
+        document.getElementById("line6of94y2").setAttribute("to", centerY + halfDiag + 2 * cRad+4*halfDiag);
+        document.getElementById("line6of94y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of95y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of95y1").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("line6of95y1").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("line6of95y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of95y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of95y2").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("line6of95y2").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("line6of95y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of96y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of96y1").setAttribute("from", centerY + cRad);
+        document.getElementById("line6of96y1").setAttribute("to", centerY + cRad+4*halfDiag);
+        document.getElementById("line6of96y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of96y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of96y2").setAttribute("from", centerY + halfDiag);
+        document.getElementById("line6of96y2").setAttribute("to", centerY + halfDiag+4*halfDiag);
+        document.getElementById("line6of96y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of97y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of97y1").setAttribute("from", centerY + halfDiag + 2 * cRad);
+        document.getElementById("line6of97y1").setAttribute("to", centerY + halfDiag + 2 * cRad+4*halfDiag);
+        document.getElementById("line6of97y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of97y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of97y2").setAttribute("from", centerY + 2 * halfDiag);
+        document.getElementById("line6of97y2").setAttribute("to", centerY + 2 * halfDiag+4*halfDiag);
+        document.getElementById("line6of97y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of98y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of98y1").setAttribute("from", centerY + 2 * halfDiag + cRad + side);
+        document.getElementById("line6of98y1").setAttribute("to", centerY + 2 * halfDiag + cRad + side+4*halfDiag);
+        document.getElementById("line6of98y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of98y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of98y2").setAttribute("from", centerY + 3 * halfDiag + cRad - side);
+        document.getElementById("line6of98y2").setAttribute("to", centerY + 3 * halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line6of98y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of99y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of99y1").setAttribute("from", centerY + 3 * halfDiag + cRad - side);
+        document.getElementById("line6of99y1").setAttribute("to", centerY + 3 * halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line6of99y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of99y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of99y2").setAttribute("from", centerY + 2 * halfDiag + cRad + side);
+        document.getElementById("line6of99y2").setAttribute("to", centerY + 2 * halfDiag + cRad + side+4*halfDiag);
+        document.getElementById("line6of99y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of910y1").setAttribute("attributeName", "y1");
+        document.getElementById("line6of910y1").setAttribute("from", centerY + halfDiag + cRad + side);
+        document.getElementById("line6of910y1").setAttribute("to", centerY + halfDiag + cRad + side+4*halfDiag);
+        document.getElementById("line6of910y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line6of910y2").setAttribute("attributeName", "y2");
+        document.getElementById("line6of910y2").setAttribute("from", centerY + 2 * halfDiag + cRad - side);
+        document.getElementById("line6of910y2").setAttribute("to", centerY + 2 * halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line6of910y2").setAttribute("dur", "2s");
+    
+        //top part
+        
+        document.getElementById("c51move").setAttribute("attributeName", "cy");
+        document.getElementById("c51move").setAttribute("from", centerY);
+        document.getElementById("c51move").setAttribute("to", centerY- 4*halfDiag);
+        document.getElementById("c51move").setAttribute("dur", "2s");
+    
+        document.getElementById("c52move").setAttribute("attributeName", "cy");
+        document.getElementById("c52move").setAttribute("from", centerY - halfDiag - cRad);
+        document.getElementById("c52move").setAttribute("to", centerY - halfDiag - cRad-4*halfDiag);
+        document.getElementById("c52move").setAttribute("dur", "2s");
+    
+        document.getElementById("c53move").setAttribute("attributeName", "cy");
+        document.getElementById("c53move").setAttribute("from", centerY);
+        document.getElementById("c53move").setAttribute("to", centerY- 4*halfDiag);
+        document.getElementById("c53move").setAttribute("dur", "2s");
+    
+        document.getElementById("c54move").setAttribute("attributeName", "cy");
+        document.getElementById("c54move").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("c54move").setAttribute("to", centerY + halfDiag + cRad-4*halfDiag);
+        document.getElementById("c54move").setAttribute("dur", "2s");
+    
+        document.getElementById("line51y1").setAttribute("attributeName", "y1");
+        document.getElementById("line51y1").setAttribute("from", centerY - side);
+        document.getElementById("line51y1").setAttribute("to", centerY - side-4*halfDiag);
+        document.getElementById("line51y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line51y2").setAttribute("attributeName", "y2");
+        document.getElementById("line51y2").setAttribute("from", centerY - halfDiag - cRad + side);
+        document.getElementById("line51y2").setAttribute("to", centerY - halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("line51y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line52y1").setAttribute("attributeName", "y1");
+        document.getElementById("line52y1").setAttribute("from", centerY - halfDiag - cRad + side);
+        document.getElementById("line52y1").setAttribute("to", centerY - halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("line52y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line52y2").setAttribute("attributeName", "y2");
+        document.getElementById("line52y2").setAttribute("from", centerY - side);
+        document.getElementById("line52y2").setAttribute("to", centerY - side-4*halfDiag);
+        document.getElementById("line52y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line53y1").setAttribute("attributeName", "y1");
+        document.getElementById("line53y1").setAttribute("from", centerY + side);
+        document.getElementById("line53y1").setAttribute("to", centerY + side-4*halfDiag);
+        document.getElementById("line53y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line53y2").setAttribute("attributeName", "y2");
+        document.getElementById("line53y2").setAttribute("from", centerY + halfDiag + cRad - side);
+        document.getElementById("line53y2").setAttribute("to", centerY + halfDiag + cRad - side-4*halfDiag);
+        document.getElementById("line53y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line54y1").setAttribute("attributeName", "y1");
+        document.getElementById("line54y1").setAttribute("from", centerY + halfDiag + cRad - side);
+        document.getElementById("line54y1").setAttribute("to", centerY + halfDiag + cRad - side-4*halfDiag);
+        document.getElementById("line54y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line54y2").setAttribute("attributeName", "y2");
+        document.getElementById("line54y2").setAttribute("from", centerY + side);
+        document.getElementById("line54y2").setAttribute("to", centerY + side-4*halfDiag);
+        document.getElementById("line54y2").setAttribute("dur", "2s");
+        
+        document.getElementById("c5tri1move").setAttribute("attributeName", "cy");
+        document.getElementById("c5tri1move").setAttribute("from", centerY - 2 * halfDiag - cRad);
+        document.getElementById("c5tri1move").setAttribute("to", centerY - 2 * halfDiag - cRad- 4*halfDiag);
+        document.getElementById("c5tri1move").setAttribute("dur", "2s");
+    
+        document.getElementById("c5tri2move").setAttribute("attributeName", "cy");
+        document.getElementById("c5tri2move").setAttribute("from", centerY - 2 * halfDiag - cRad);
+        document.getElementById("c5tri2move").setAttribute("to", centerY - 2 * halfDiag - cRad- 4*halfDiag);
+        document.getElementById("c5tri2move").setAttribute("dur", "2s");
+    
+        document.getElementById("c5tri3move").setAttribute("attributeName", "cy");
+        document.getElementById("c5tri3move").setAttribute("from", centerY - 3 * halfDiag - cRad);
+        document.getElementById("c5tri3move").setAttribute("to", centerY - 3 * halfDiag - cRad- 4*halfDiag);
+        document.getElementById("c5tri3move").setAttribute("dur", "2s");
+    
+        document.getElementById("c5tri4move").setAttribute("attributeName", "cy");
+        document.getElementById("c5tri4move").setAttribute("from", centerY - 2 * halfDiag - cRad);
+        document.getElementById("c5tri4move").setAttribute("to", centerY - 2 * halfDiag - cRad- 4*halfDiag);
+        document.getElementById("c5tri4move").setAttribute("dur", "2s");
+    
+        //top lines
+    
+        document.getElementById("linetop1y1").setAttribute("attributeName", "y1");
+        document.getElementById("linetop1y1").setAttribute("from", centerY - halfDiag - 2 * cRad);
+        document.getElementById("linetop1y1").setAttribute("to", centerY - halfDiag - 2 * cRad-4*halfDiag);
+        document.getElementById("linetop1y1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop1y2").setAttribute("attributeName", "y2");
+        document.getElementById("linetop1y2").setAttribute("from", centerY - 2 * halfDiag);
+        document.getElementById("linetop1y2").setAttribute("to", centerY - 2 * halfDiag-4*halfDiag);
+        document.getElementById("linetop1y2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop2y1").setAttribute("attributeName", "y1");
+        document.getElementById("linetop2y1").setAttribute("from", centerY - 2 * halfDiag - cRad);
+        document.getElementById("linetop2y1").setAttribute("to", centerY - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("linetop2y1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop2y2").setAttribute("attributeName", "y2");
+        document.getElementById("linetop2y2").setAttribute("from", centerY - 2 * halfDiag - cRad);
+        document.getElementById("linetop2y2").setAttribute("to", centerY - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("linetop2y2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop3y1").setAttribute("attributeName", "y1");
+        document.getElementById("linetop3y1").setAttribute("from", centerY - 2 * halfDiag - cRad - side);
+        document.getElementById("linetop3y1").setAttribute("to", centerY - 2 * halfDiag - cRad - side-4*halfDiag);
+        document.getElementById("linetop3y1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop3y2").setAttribute("attributeName", "y2");
+        document.getElementById("linetop3y2").setAttribute("from", centerY - 3 * halfDiag - cRad + side);
+        document.getElementById("linetop3y2").setAttribute("to", centerY - 3 * halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("linetop3y2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop4y1").setAttribute("attributeName", "y1");
+        document.getElementById("linetop4y1").setAttribute("from", centerY - 3 * halfDiag - cRad + side);
+        document.getElementById("linetop4y1").setAttribute("to", centerY - 3 * halfDiag - cRad + side-4*halfDiag);
+        document.getElementById("linetop4y1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop4y2").setAttribute("attributeName", "y2");
+        document.getElementById("linetop4y2").setAttribute("from", centerY - 2 * halfDiag - cRad - side);
+        document.getElementById("linetop4y2").setAttribute("to", centerY - 2 * halfDiag - cRad - side-4*halfDiag);
+        document.getElementById("linetop4y2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop5y1").setAttribute("attributeName", "y1");
+        document.getElementById("linetop5y1").setAttribute("from", centerY - 2 * halfDiag - cRad);
+        document.getElementById("linetop5y1").setAttribute("to", centerY - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("linetop5y1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop5y2").setAttribute("attributeName", "y2");
+        document.getElementById("linetop5y2").setAttribute("from", centerY - 2 * halfDiag - cRad);
+        document.getElementById("linetop5y2").setAttribute("to", centerY - 2 * halfDiag - cRad-4*halfDiag);
+        document.getElementById("linetop5y2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop6y1").setAttribute("attributeName", "y1");
+        document.getElementById("linetop6y1").setAttribute("from", centerY - 2 * halfDiag);
+        document.getElementById("linetop6y1").setAttribute("to", centerY - 2 * halfDiag-4*halfDiag);
+        document.getElementById("linetop6y1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop6y2").setAttribute("attributeName", "y2");
+        document.getElementById("linetop6y2").setAttribute("from", centerY - cRad);
+        document.getElementById("linetop6y2").setAttribute("to", centerY - cRad-4*halfDiag);
+        document.getElementById("linetop6y2").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop7y1").setAttribute("attributeName", "y1");
+        document.getElementById("linetop7y1").setAttribute("from", centerY - 2 * halfDiag);
+        document.getElementById("linetop7y1").setAttribute("to", centerY - 2 * halfDiag-4*halfDiag);
+        document.getElementById("linetop7y1").setAttribute("dur", "2s");
+    
+        document.getElementById("linetop7y2").setAttribute("attributeName", "y2");
+        document.getElementById("linetop7y2").setAttribute("from", centerY - cRad);
+        document.getElementById("linetop7y2").setAttribute("to", centerY - cRad-4*halfDiag);
+        document.getElementById("linetop7y2").setAttribute("dur", "2s");
+    
+        //bottom left
+        
+        document.getElementById("c31movex").setAttribute("attributeName", "cx");
+        document.getElementById("c31movex").setAttribute("from", centerX - halfDiag - cRad);
+        document.getElementById("c31movex").setAttribute("to", centerX - halfDiag - cRad + 4*halfDiag);
+        document.getElementById("c31movex").setAttribute("dur", "2s");
+    
+        document.getElementById("c32movex").setAttribute("attributeName", "cx");
+        document.getElementById("c32movex").setAttribute("from", centerX);
+        document.getElementById("c32movex").setAttribute("to", centerX+4*halfDiag);
+        document.getElementById("c32movex").setAttribute("dur", "2s");
+    
+        document.getElementById("c33movex").setAttribute("attributeName", "cx");
+        document.getElementById("c33movex").setAttribute("from", centerX + halfDiag + cRad);
+        document.getElementById("c33movex").setAttribute("to", centerX + halfDiag + cRad + 4*halfDiag);
+        document.getElementById("c33movex").setAttribute("dur", "2s");
+    
+        document.getElementById("c34movex").setAttribute("attributeName", "cx");
+        document.getElementById("c34movex").setAttribute("from", centerX);
+        document.getElementById("c34movex").setAttribute("to", centerX+4*halfDiag);
+        document.getElementById("c34movex").setAttribute("dur", "2s");
+        
+        document.getElementById("c31movey").setAttribute("attributeName", "cy");
+        document.getElementById("c31movey").setAttribute("from", centerY);
+        document.getElementById("c31movey").setAttribute("to", centerY+ 4*halfDiag);
+        document.getElementById("c31movey").setAttribute("dur", "2s");
+    
+        document.getElementById("c32movey").setAttribute("attributeName", "cy");
+        document.getElementById("c32movey").setAttribute("from", centerY - halfDiag - cRad);
+        document.getElementById("c32movey").setAttribute("to", centerY - halfDiag - cRad+4*halfDiag);
+        document.getElementById("c32movey").setAttribute("dur", "2s");
+    
+        document.getElementById("c33movey").setAttribute("attributeName", "cy");
+        document.getElementById("c33movey").setAttribute("from", centerY);
+        document.getElementById("c33movey").setAttribute("to", centerY+ 4*halfDiag);
+        document.getElementById("c33movey").setAttribute("dur", "2s");
+    
+        document.getElementById("c34movey").setAttribute("attributeName", "cy");
+        document.getElementById("c34movey").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("c34movey").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("c34movey").setAttribute("dur", "2s");
+    
+        document.getElementById("line31x1").setAttribute("attributeName", "x1");
+        document.getElementById("line31x1").setAttribute("from", centerX - halfDiag - cRad + side);
+        document.getElementById("line31x1").setAttribute("to", centerX - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line31x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line31x2").setAttribute("attributeName", "x2");
+        document.getElementById("line31x2").setAttribute("from", centerX - side);
+        document.getElementById("line31x2").setAttribute("to", centerX - side+4*halfDiag);
+        document.getElementById("line31x2").setAttribute("dur", "2s");
+        
+        document.getElementById("line32x1").setAttribute("attributeName", "x1");
+        document.getElementById("line32x1").setAttribute("from", centerX + side);
+        document.getElementById("line32x1").setAttribute("to", centerX + side+4*halfDiag);
+        document.getElementById("line32x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line32x2").setAttribute("attributeName", "x2");
+        document.getElementById("line32x2").setAttribute("from", centerX + halfDiag + cRad - side);
+        document.getElementById("line32x2").setAttribute("to", centerX + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line32x2").setAttribute("dur", "2s");
+
+        document.getElementById("line33x1").setAttribute("attributeName", "x1");
+        document.getElementById("line33x1").setAttribute("from", centerX + halfDiag + cRad - side);
+        document.getElementById("line33x1").setAttribute("to", centerX + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line33x1").setAttribute("dur", "2s");
+    
+        document.getElementById("line33x2").setAttribute("attributeName", "x2");
+        document.getElementById("line33x2").setAttribute("from", centerX + side);
+        document.getElementById("line33x2").setAttribute("to", centerX + side+4*halfDiag);
+        document.getElementById("line33x2").setAttribute("dur", "2s");
+    
+        document.getElementById("line34x1").setAttribute("attributeName", "x1");
+        document.getElementById("line34x1").setAttribute("from", centerX - side);
+        document.getElementById("line34x1").setAttribute("to", centerX - side+4*halfDiag);
+        document.getElementById("line34x1").setAttribute("dur", "2s");
+   
+        document.getElementById("line34x2").setAttribute("attributeName", "x2");
+        document.getElementById("line34x2").setAttribute("from", centerX - halfDiag - cRad + side);
+        document.getElementById("line34x2").setAttribute("to", centerX - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line34x2").setAttribute("dur", "2s");
+    
+        document.getElementById("line31y1").setAttribute("attributeName", "y1");
+        document.getElementById("line31y1").setAttribute("from", centerY - side);
+        document.getElementById("line31y1").setAttribute("to", centerY - side+4*halfDiag);
+        document.getElementById("line31y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line31y2").setAttribute("attributeName", "y2");
+        document.getElementById("line31y2").setAttribute("from", centerY - halfDiag - cRad + side);
+        document.getElementById("line31y2").setAttribute("to", centerY - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line31y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line32y1").setAttribute("attributeName", "y1");
+        document.getElementById("line32y1").setAttribute("from", centerY - halfDiag - cRad + side);
+        document.getElementById("line32y1").setAttribute("to", centerY - halfDiag - cRad + side+4*halfDiag);
+        document.getElementById("line32y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line32y2").setAttribute("attributeName", "y2");
+        document.getElementById("line32y2").setAttribute("from", centerY - side);
+        document.getElementById("line32y2").setAttribute("to", centerY - side+4*halfDiag);
+        document.getElementById("line32y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line33y1").setAttribute("attributeName", "y1");
+        document.getElementById("line33y1").setAttribute("from", centerY + side);
+        document.getElementById("line33y1").setAttribute("to", centerY + side+4*halfDiag);
+        document.getElementById("line33y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line33y2").setAttribute("attributeName", "y2");
+        document.getElementById("line33y2").setAttribute("from", centerY + halfDiag + cRad - side);
+        document.getElementById("line33y2").setAttribute("to", centerY + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line33y2").setAttribute("dur", "2s");
+    
+        document.getElementById("line34y1").setAttribute("attributeName", "y1");
+        document.getElementById("line34y1").setAttribute("from", centerY + halfDiag + cRad - side);
+        document.getElementById("line34y1").setAttribute("to", centerY + halfDiag + cRad - side+4*halfDiag);
+        document.getElementById("line34y1").setAttribute("dur", "2s");
+    
+        document.getElementById("line34y2").setAttribute("attributeName", "y2");
+        document.getElementById("line34y2").setAttribute("from", centerY + side);
+        document.getElementById("line34y2").setAttribute("to", centerY + side+4*halfDiag);
+        document.getElementById("line34y2").setAttribute("dur", "2s");
+        
+        document.getElementById("c3movex").setAttribute("attributeName", "cx");
+        document.getElementById("c3movex").setAttribute("from", centerX - halfDiag - cRad);
+        document.getElementById("c3movex").setAttribute("to", centerX - halfDiag - cRad+4*halfDiag);
+        document.getElementById("c3movex").setAttribute("dur", "2s");
+        
+        document.getElementById("c3movey").setAttribute("attributeName", "cy");
+        document.getElementById("c3movey").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("c3movey").setAttribute("to", centerY + halfDiag + cRad+ 4*halfDiag);
+        document.getElementById("c3movey").setAttribute("dur", "2s");
+    
+        document.getElementById("line31ox1").setAttribute("attributeName", "x1");
+        document.getElementById("line31ox1").setAttribute("from", centerX - halfDiag - cRad);
+        document.getElementById("line31ox1").setAttribute("to", centerX - halfDiag - cRad+4*halfDiag);
+        document.getElementById("line31ox1").setAttribute("dur", "2s");
+   
+        document.getElementById("line31ox2").setAttribute("attributeName", "x2");
+        document.getElementById("line31ox2").setAttribute("from", centerX - halfDiag - cRad);
+        document.getElementById("line31ox2").setAttribute("to", centerX - halfDiag - cRad+4*halfDiag);
+        document.getElementById("line31ox2").setAttribute("dur", "2s");
+    
+        document.getElementById("line32ox1").setAttribute("attributeName", "x1");
+        document.getElementById("line32ox1").setAttribute("from", centerX - halfDiag);
+        document.getElementById("line32ox1").setAttribute("to", centerX - halfDiag+4*halfDiag);
+        document.getElementById("line32ox1").setAttribute("dur", "2s");
+   
+        document.getElementById("line32ox2").setAttribute("attributeName", "x2");
+        document.getElementById("line32ox2").setAttribute("from", centerX - cRad);
+        document.getElementById("line32ox2").setAttribute("to", centerX - cRad+4*halfDiag);
+        document.getElementById("line32ox2").setAttribute("dur", "2s");
+    
+        document.getElementById("line31oy1").setAttribute("attributeName", "y1");
+        document.getElementById("line31oy1").setAttribute("from", centerY + cRad);
+        document.getElementById("line31oy1").setAttribute("to", centerY + cRad+4*halfDiag);
+        document.getElementById("line31oy1").setAttribute("dur", "2s");
+    
+        document.getElementById("line31oy2").setAttribute("attributeName", "y2");
+        document.getElementById("line31oy2").setAttribute("from", centerY + halfDiag);
+        document.getElementById("line31oy2").setAttribute("to", centerY + halfDiag+4*halfDiag);
+        document.getElementById("line31oy2").setAttribute("dur", "2s");
+    
+        document.getElementById("line32oy1").setAttribute("attributeName", "y1");
+        document.getElementById("line32oy1").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("line32oy1").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("line32oy1").setAttribute("dur", "2s");
+    
+        document.getElementById("line32oy2").setAttribute("attributeName", "y2");
+        document.getElementById("line32oy2").setAttribute("from", centerY + halfDiag + cRad);
+        document.getElementById("line32oy2").setAttribute("to", centerY + halfDiag + cRad+4*halfDiag);
+        document.getElementById("line32oy2").setAttribute("dur", "2s");
+    }
+</script>

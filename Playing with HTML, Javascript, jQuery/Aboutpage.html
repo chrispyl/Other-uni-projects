@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="Christos Pylianidis">
+<link rel="stylesheet" type="text/css" href="mycss/maincss.css" />
+<link rel="icon" type="image/x-icon" href="myimages/brain.ico" />
+<title>World of Memes!</title>
+</head>
+<body>
+   
+  <div id="htmlvalidcont3">
+    <div id="htmlvalid3">
+     <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fmorphou.ee.duth.gr%2F~sd56184%2FAboutpage.html">
+        <img style="border:0px;width:88px;height:31px" src="http://www.fourquarters.biz/images/w3cvalidhtml5.jpg" alt="Valid HTML5!" />
+	 </a>	
+    </div>
+   </div> 
+   
+  <div id="cssvalidcont3">
+    <div id="cssvalid3">
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0px;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+      </a>
+    </div>
+  </div>
+   
+  <div id="banner">
+    <img id="bimg" src="myimages/banner1.png" alt="World of memes">
+  </div>
+   
+  <div id="traslatecontaboutpage">
+    <div id="google_translate_element"></div>
+	<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+          }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </div>
+
+  <div id="searchcont">
+    <form id="searchform" name="myform" method="get" onsubmit="choose();">
+      <input type="text" name="q" size="15" maxlength="255" value="" />     
+      <input type="hidden" name="sitesearch" value=""/>
+	  <input type="submit" value="Search" />
+    </form>
+   
+    <select id="selectsearchengine">
+	    <option value="Google">Google</option>
+	    <option value="Yahoo">Yahoo</option>
+	    <option value="Bing">Bing</option>
+    </select> 
+  </div> 
+   
+  <div id="buttoncont">
+    <div id="buttons">
+      <button type="button" class="leftbutton" onclick="location.href='Intropage.html'">Home</button>
+      <button type="button" class="centerbutton" onclick="location.href='Createpage.html'">Create</button>
+      <button type="button" class="rightbutton" onclick="location.href='Aboutpage.html'">About</button>
+    </div>
+  </div>
+  
+  <div id="sim1cont">
+    <p id="sim1">Some sites with memes:</p>
+  </div>
+  
+  <div id="sim2cont">
+    <div id="sim2">
+	  <a href="http://9gag.com/" target="_blank">9gag.com</a><br>
+      <a href="http://greekmemes.com/" target="_blank">greekmemes.com</a><br>
+      <a href="http://memebase.cheezburger.com/" target="_blank">memebase.com</a><br>
+      <a href="http://memedump.com/main.php" target="_blank">memedump.com</a> 	
+	</div>  
+  </div>
+  
+  <div id="futurecont">
+    <img id="future" src="myimages/evolution.jpeg" alt=" ">
+  </div>
+  
+  <div id="mailcont">
+    <p id="mail">If you found a bug please mail to:  <a href="mailto:pylianidis@gmail.com?Subject=Site%20Bug">pylianidis@gmail.com</a></p>
+  </div>
+  
+  <div id="mutecont">
+    <button id="mute" class="muteaudio" onclick="mute()">Please make it stop!</button>
+  </div>
+  
+  <div id="timecont3">
+    <iframe id="time3" src="http://free.timeanddate.com/clock/i3fqgfai/n2411/tlgr17/fs10/tct/pct/fti/tt0/td1/th1/tb4" width="165" height="28"></iframe>
+  </div>
+  
+  <audio id="music" autoplay loop>
+    <source src="tracks/track.mp3" type="audio/mp3">
+	<source src="tracks/track.wav" type="audio/wav">
+  </audio>
+  
+  <script type="text/javascript">
+  
+  function mute()
+    {
+	 if(document.getElementById('music').muted==false)
+	   {
+	     document.getElementById('music').muted = true;
+	     document.getElementById('mute').innerHTML = "I regret, i like it...";
+	   }
+	   else
+	   {
+	     document.getElementById('music').muted = false;
+		 document.getElementById('mute').innerHTML = "Please make it stop!";
+	   }
+    }
+  
+  function choose()
+	{
+	  var option = document.getElementById("selectsearchengine").selectedIndex;
+	  if(option==0) 
+	   {document.myform.action ="http://www.google.com/search";}
+	  else if(option==1)
+	   {document.myform.action ="http://search.yahoo.com/search";}
+	  else
+	   {document.myform.action ="http://www.bing.com/search/web";}
+	}
+  
+  </script>
+  
+</body>
+</html>

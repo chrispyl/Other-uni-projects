@@ -1,0 +1,7 @@
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Release\ImageLab.Form1.resources
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Release\ImageLab.Properties.Resources.resources
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Release\ImageLab.csproj.GenerateResource.Cache
+C:\Users\Christos\Desktop\ImageLab\ImageLab\bin\Release\ImageLab.exe
+C:\Users\Christos\Desktop\ImageLab\ImageLab\bin\Release\ImageLab.pdb
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Release\ImageLab.exe
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Release\ImageLab.pdb

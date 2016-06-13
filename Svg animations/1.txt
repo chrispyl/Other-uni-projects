@@ -1,0 +1,714 @@
+<svg width="500" height="500" onload="loadValues()">
+    <!--Bottom layer-->
+    
+    <defs>
+        <linearGradient id="grad1" x1="100%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!--upper level circle numbers numbers-->
+    
+    <text id="n4" visibility="hidden">4
+        <set id="n4anim" attributeName="visibility" attributeType="CSS" to="visible" begin="initialcicles1.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="n9" visibility="hidden">9
+        <set id="n9anim" attributeName="visibility" attributeType="CSS" to="visible" begin="silver21.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="n14" visibility="hidden">14
+        <set id="n14anim" attributeName="visibility" attributeType="CSS" to="visible" begin="fourthvisibility.end+1s" dur="1s" fill="freeze"/>
+        <animate id="n14animMove" begin="line10y.end+1s" fill="freeze"></animate>
+    </text>
+    <text id="n18" visibility="hidden">18
+        <set id="n18anim" attributeName="visibility" attributeType="CSS" to="visible" begin="silver51.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="n28" visibility="hidden">28
+        <set id="n28anim" attributeName="visibility" attributeType="CSS" to="visible" begin="silver6.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="n46" visibility="hidden">46
+        <set id="n28anim" attributeName="visibility" attributeType="CSS" to="visible" begin="circlemove11.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    
+    <!--bottom numbers-->
+    
+    <text id="botctext1" visibility="hidden">1
+        <set id="botctext1anim" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="botctext2" visibility="hidden">3
+        <set id="botctext2anim" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="botctext3" visibility="hidden">5
+        <set id="botctext3anim" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="botctext4" visibility="hidden">6
+        <set id="botctext4anim" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <animate id="botctext4animMove" begin="line10y.end+1s" fill="freeze"></animate>
+    </text>
+    <text id="botctext5" visibility="hidden">8
+        <set id="botctext5anim" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <animate id="botctext5animMove" begin="line10y.end+1s" fill="freeze"></animate>
+    </text>
+    <text id="botctext6" visibility="hidden">9
+        <set id="botctext6anim" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <animate id="botctext6animMove" begin="line10y.end+1s" fill="freeze"></animate>
+    </text>
+    <text id="botctext7" visibility="hidden">14
+        <set id="botctext7anim" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+    </text>
+    
+     <!--Explanations-->
+    
+    <text id="explanation1" visibility="hidden">Επειδή 1+3&#60;5
+        <set id="exp1animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="initialcicles1.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp1animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="line2y.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation2" visibility="hidden">Επειδή 4+5
+        <set id="exp2animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="line2y.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp2animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="gradient2.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation3" visibility="hidden">Επειδή 4+5&#60;5+6
+        <set id="exp3animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="gradient2.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp3animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="line4y.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation4" visibility="hidden">Συνδέονται οι κορυφές 6 και 8
+        <set id="exp4animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="line4y.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp4animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="silver3.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation5" visibility="hidden">Επειδή 9+6
+        <set id="exp5animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="thirdvisibility.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp5animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="cyan2.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation6" visibility="hidden">Επειδή 9+6&#62;6+8
+        <set id="exp6animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="cyan2.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp6animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="silver3.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation7" visibility="hidden">Θα επιλεγούν τα ζεύγη κορυφών 9 &#38; 14
+        <set id="exp7animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="line6y.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp7animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="red4.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation8" visibility="hidden">Θα επιλεγούν τα ζεύγη κορυφών 9 &#38; 9
+        <set id="exp8animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="red4.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp8animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="red5.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation9" visibility="hidden">Επειδή 14&#60;15 σβήνει η κορυφή με βάρος 15
+        <set id="exp9animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="red5.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp9animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="silver51.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation10" visibility="hidden">Επιλέγονται οι κορυφές 9 και 9
+        <set id="exp10animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="silver51.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp10animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="line8y.end+1s" dur="1s" fill="freeze"/>
+    </text>
+    <text id="explanation11" visibility="hidden">Επειδή 9+14&#62;9+9 
+        <set id="exp11animShow" attributeName="visibility" attributeType="CSS" to="visible" begin="line8y.end+1s" dur="1s" fill="freeze"/>
+        <set id="exp11animHide" attributeName="visibility" attributeType="CSS" to="hidden" begin="silver6.end+1s" dur="1s" fill="freeze"/>
+    </text>    
+    
+    
+    <circle id="c1" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="initialcicles1" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+    </circle>
+    <circle id="c2" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="initialcicles2" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+    </circle>
+    <circle id="c3" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="initialcicles3" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <set id="gradient1" attributeName="fill" to="url(#grad1)" begin="line2y.end+1s" dur="1s" fill="freeze"/>
+        <set id="yellow1" attributeName="fill" to="yellow" begin="gradient2.end+1s" dur="1s" fill="freeze"/>
+        <set id="gradient3" attributeName="fill" to="url(#grad1)" begin="yellow2.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver22" attributeName="fill" begin="silver1.end+1s" dur="1s" fill="freeze"/>
+    </circle>
+    <circle id="c4" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="initialcicles4" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <set id="yellow2" attributeName="fill" to="yellow" begin="yellow1.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver1" attributeName="fill" begin="gradient3.end+1s" dur="1s" fill="freeze"/>
+        <set id="cyan2" attributeName="fill" to="cyan" begin="cyan1.end+1s" dur="1s" fill="freeze"/>
+        <set id="red1" attributeName="fill" to="red" begin="cyan2.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver41" attributeName="fill" begin="silver3.end+1s" dur="1s" fill="freeze"/>
+        <animate id="circlemove11" begin="line10y.end+1s" fill="freeze"></animate>
+    </circle>
+    <circle id="c5" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="initialcicles5" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <set id="red2" attributeName="fill" to="red" begin="red1.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver42" attributeName="fill" begin="silver3.end+1s" dur="1s" fill="freeze"/>
+        <animate id="circlemove12" begin="line10y.end+1s" fill="freeze"></animate>
+    </circle>
+    <circle id="c6" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="initialcicles6" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+        <set id="red5" attributeName="fill" to="red" begin="red4.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver51" attributeName="fill" begin="red5.end+1s" dur="1s" fill="freeze"/>
+        
+        <!--move circle-->
+        <animate id="circlemove13" begin="line10y.end+1s" fill="freeze"></animate>
+    </circle>
+    <circle id="c7" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="initialcicles7" attributeName="visibility" attributeType="CSS" to="visible" begin="2s" dur="1s" fill="freeze"/>
+    </circle>
+    
+    <!--Middle layer-->
+    <circle id="midc1" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="firstVisibility" attributeName="visibility" attributeType="CSS" to="visible" begin="initialcicles1.end+1s"  dur="1s" fill="freeze"/>
+        <set id="gradient2" attributeName="fill" to="url(#grad1)" begin="gradient1.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver21" attributeName="fill" begin="silver1.end+1s" dur="1s" fill="freeze"/>
+    </circle>
+    <line id="line1" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line1x" begin="firstVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line1y" begin="firstVisibility.end+1s" fill="freeze"></animate>
+    </line>
+    <line id="line2" style="stroke:rgb(0,0,0);stroke-width:2">  
+        <animate id="line2x" begin="firstVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line2y" begin="firstVisibility.end+1s" fill="freeze"></animate>
+    </line>
+    
+    <circle id="midc2" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="thirdvisibility" attributeName="visibility" attributeType="CSS" to="visible" begin="line4y.end+1s" dur="1s" fill="freeze"/>
+        <set id="fourthvisibility" attributeName="visibility" attributeType="CSS" to="hidden" begin="silver3.end+1s" dur="1s" fill="freeze"/>
+        <set id="fifthvisibility" attributeName="visibility" attributeType="CSS" to="visible" begin="fourthvisibility.end+1s" dur="1s" fill="freeze"/>
+        <set id="red4" attributeName="fill" to="red" begin="red3.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver52" attributeName="fill" begin="red5.end+1s" dur="1s" fill="freeze"/>
+        <animate id="circlemove14" begin="line10y.end+1s" fill="freeze"></animate>
+    </circle>
+    <line id="line5" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line5x" begin="fifthvisibility.end+1s" fill="freeze"></animate>
+        <animate id="line5y" begin="fifthvisibility.end+1s" fill="freeze"></animate>
+        
+        <!--Move left line along-->
+        <animate id="line5movex1" begin="line10y.end+1s" fill="freeze"></animate>
+        <animate id="line5movex2" begin="line10y.end+1s" fill="freeze"></animate>
+    </line>
+    <line id="line6" style="stroke:rgb(0,0,0);stroke-width:2">  
+        <animate id="line6x" begin="fifthvisibility.end+1s" fill="freeze"></animate>
+        <animate id="line6y" begin="fifthvisibility.end+1s" fill="freeze"></animate>
+        
+        <!--Move right line along-->
+        <animate id="line6movex1" begin="line10y.end+1s" fill="freeze"></animate>
+        <animate id="line6movex2" begin="line10y.end+1s" fill="freeze"></animate>
+    </line>
+    
+    <!--Above middle layer-->
+    
+    <circle id="abovemidc1" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="SecondVisibility" attributeName="visibility" attributeType="CSS" to="visible" begin="silver21.end+1s" dur="1s" fill="freeze"/>
+        <set id="cyan1" attributeName="fill" to="cyan" begin="thirdvisibility.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver3" attributeName="fill" begin="red2.end+1s" dur="1s" fill="freeze"/>
+        <set id="red3" attributeName="fill" to="red" begin="line6y.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver53" attributeName="fill" begin="red5.end+1s" dur="1s" fill="freeze"/>
+    </circle>
+    <line id="line3" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line3x" begin="SecondVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line3y" begin="SecondVisibility.end+1s" fill="freeze"></animate>
+    </line>
+    <line id="line4" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line4x" begin="SecondVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line4y" begin="SecondVisibility.end+1s" fill="freeze"></animate>
+    </line>
+    
+    
+    <circle id="abovemidc2" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="SeventhVisibility" attributeName="visibility" attributeType="CSS" to="visible" begin="silver6.end+1s" dur="1s" fill="freeze"/>
+    </circle>
+    <line id="line9" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line9x" begin="SeventhVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line9y" begin="SeventhVisibility.end+1s" fill="freeze"></animate>
+        
+        <!--moving left line along-->
+        <animate id="line9move" begin="line10y.end+1s" fill="freeze"></animate>
+    </line>
+    <line id="line10" x1="350" y1="110" x2="350" y2="110" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line10x" begin="SeventhVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line10y" begin="SeventhVisibility.end+1s" fill="freeze"> </animate>
+    </line>    
+    
+    <!--Top layer-->
+    
+    <circle id="topc1" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="SixthVisibility" attributeName="visibility" attributeType="CSS" to="visible" begin="silver51.end+1s" dur="1s" fill="freeze"/>
+        <set id="silver6" attributeName="fill" begin="line8y.end+1s" dur="1s" fill="freeze"/>
+    </circle>
+    <line id="line7" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line7x" begin="SixthVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line7y" begin="SixthVisibility.end+1s" fill="freeze"></animate>
+    </line>
+    <line id="line8" style="stroke:rgb(0,0,0);stroke-width:2">  
+        <animate id="line8x" begin="SixthVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line8y" begin="SixthVisibility.end+1s" fill="freeze"></animate>
+        
+         <!--Line connected with cicle move with cicle-->   
+        <animate id="line8move" begin="line10y.end+1s" fill="freeze"></animate>  
+    </line>
+    
+    <!--roof layer-->
+    <circle id="roofc1" stroke="black" stroke-width="1" visibility="hidden">
+        <set id="eightthVisibility" attributeName="visibility" attributeType="CSS" to="visible" begin="circlemove11.end+1s" dur="1s" fill="freeze"/>
+    </circle>
+    <line id="line11" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line11x" begin="eightthVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line11y" begin="eightthVisibility.end+1s" fill="freeze"></animate>
+    </line>
+
+    <line id="line12" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="line12x" begin="eightthVisibility.end+1s" fill="freeze"></animate>
+        <animate id="line12y" begin="eightthVisibility.end+1s" fill="freeze"></animate>
+    </line>
+</svg>
+
+<script>
+function loadValues()
+{    
+    var defaultcColor="silver"; //default color of circle
+    var cRad=10;                //circle radious
+    var cxOffset=20;            //distance from left margin 
+    var botcDistance=60;        //distance between bottom circle centers 
+    var levelHeight=50;         //level heigth for each circle row 
+    var deeperLevel=200;        //distance of bottom circle row from top margin
+    var defaultFontSize="16px"; //default size of text
+    var defaultFontSizeNum=16;
+    var botNumbersLeftMarginOffset=-3;
+    var defaultNumberColor="black";  
+    var explanationsTopMarginOffset=5;
+    
+    //circle repaint to default color
+    
+    document.getElementById("silver1").setAttribute("to", defaultcColor);
+    document.getElementById("silver22").setAttribute("to", defaultcColor);
+    document.getElementById("silver3").setAttribute("to", defaultcColor);
+    document.getElementById("silver41").setAttribute("to", defaultcColor);
+    document.getElementById("silver42").setAttribute("to", defaultcColor);
+    document.getElementById("silver51").setAttribute("to", defaultcColor);
+    document.getElementById("silver21").setAttribute("to", defaultcColor);
+    document.getElementById("silver52").setAttribute("to", defaultcColor);
+    document.getElementById("silver53").setAttribute("to", defaultcColor);
+    document.getElementById("silver6").setAttribute("to", defaultcColor);
+    
+    //explanations
+    
+    document.getElementById("explanation1").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation2").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation3").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation4").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation5").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation6").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation7").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation8").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation9").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation10").setAttribute("x", cxOffset-cRad);
+    document.getElementById("explanation11").setAttribute("x", cxOffset-cRad);
+    
+    document.getElementById("explanation1").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation2").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation3").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation4").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation5").setAttribute("y", deeperLevel+cRad+3*defaultFontSizeNum+explanationsTopMarginOffset); //one line below others
+    document.getElementById("explanation6").setAttribute("y", deeperLevel+cRad+3*defaultFontSizeNum+explanationsTopMarginOffset); //one line below others
+    document.getElementById("explanation7").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation8").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation9").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation10").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    document.getElementById("explanation11").setAttribute("y", deeperLevel+cRad+2*defaultFontSizeNum+explanationsTopMarginOffset);
+    
+    document.getElementById("explanation1").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation2").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation3").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation4").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation5").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation6").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation7").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation8").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation9").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation10").setAttribute("fill", defaultNumberColor);
+    document.getElementById("explanation11").setAttribute("fill", defaultNumberColor);
+    
+    document.getElementById("explanation1").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation2").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation3").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation4").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation5").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation6").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation7").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation8").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation9").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation10").setAttribute("font-size", defaultFontSize);
+    document.getElementById("explanation11").setAttribute("font-size", defaultFontSize);
+    
+    //higher level circle numbers
+    
+    document.getElementById("n4").setAttribute("x", cxOffset+botcDistance/2-cRad-defaultFontSizeNum);
+    document.getElementById("n9").setAttribute("x", cxOffset+(1*botcDistance+2*botcDistance)/2-cRad-defaultFontSizeNum);
+    document.getElementById("n14").setAttribute("x", cxOffset+(3*botcDistance+4*botcDistance)/2-cRad-defaultFontSizeNum);
+    document.getElementById("n18").setAttribute("x", cxOffset+(2*botcDistance+3*botcDistance)/2-cRad-defaultFontSizeNum);
+    document.getElementById("n28").setAttribute("x", cxOffset+(5*botcDistance+6*botcDistance)/2-cRad-defaultFontSizeNum);
+    document.getElementById("n46").setAttribute("x", cxOffset+(3*botcDistance+5*botcDistance)/2-cRad-defaultFontSizeNum);
+    
+    document.getElementById("n4").setAttribute("y", deeperLevel-levelHeight);
+    document.getElementById("n9").setAttribute("y", deeperLevel-2*levelHeight);
+    document.getElementById("n14").setAttribute("y", deeperLevel-levelHeight);
+    document.getElementById("n18").setAttribute("y", deeperLevel-3*levelHeight);
+    document.getElementById("n28").setAttribute("y", deeperLevel-2*levelHeight);
+    document.getElementById("n46").setAttribute("y", deeperLevel-4*levelHeight+0.3*levelHeight);
+    
+    document.getElementById("n4").setAttribute("fill", defaultNumberColor);
+    document.getElementById("n9").setAttribute("fill", defaultNumberColor);
+    document.getElementById("n14").setAttribute("fill", defaultNumberColor);
+    document.getElementById("n18").setAttribute("fill", defaultNumberColor);
+    document.getElementById("n28").setAttribute("fill", defaultNumberColor);
+    document.getElementById("n46").setAttribute("fill", defaultNumberColor);
+    
+    document.getElementById("n4").setAttribute("font-size", defaultFontSize);
+    document.getElementById("n9").setAttribute("font-size", defaultFontSize);
+    document.getElementById("n14").setAttribute("font-size", defaultFontSize);
+    document.getElementById("n18").setAttribute("font-size", defaultFontSize);
+    document.getElementById("n28").setAttribute("font-size", defaultFontSize);
+    document.getElementById("n46").setAttribute("font-size", defaultFontSize);
+    
+    //mid level circle 2 text animation
+    
+    document.getElementById("n14animMove").setAttribute("attributeName", "x");
+    document.getElementById("n14animMove").setAttribute("from", cxOffset+(3*botcDistance+4*botcDistance)/2-cRad-defaultFontSizeNum);
+    document.getElementById("n14animMove").setAttribute("to", cxOffset+(4*botcDistance+5*botcDistance)/2-cRad-defaultFontSizeNum);
+    document.getElementById("n14animMove").setAttribute("dur", "2s");
+
+    //bottom level text animations
+    
+    botctext4animMove
+    document.getElementById("botctext4animMove").setAttribute("attributeName", "x");
+    document.getElementById("botctext4animMove").setAttribute("from", cxOffset+3*botcDistance);
+    document.getElementById("botctext4animMove").setAttribute("to", cxOffset+4*botcDistance);
+    document.getElementById("botctext4animMove").setAttribute("dur", "2s");
+    
+    document.getElementById("botctext5animMove").setAttribute("attributeName", "x");
+    document.getElementById("botctext5animMove").setAttribute("from", cxOffset+4*botcDistance);
+    document.getElementById("botctext5animMove").setAttribute("to", cxOffset+5*botcDistance);
+    document.getElementById("botctext5animMove").setAttribute("dur", "2s");
+    
+    document.getElementById("botctext6animMove").setAttribute("attributeName", "x");
+    document.getElementById("botctext6animMove").setAttribute("from", cxOffset+5*botcDistance);
+    document.getElementById("botctext6animMove").setAttribute("to", cxOffset+3*botcDistance);
+    document.getElementById("botctext6animMove").setAttribute("dur", "2s");
+    
+    //bottom layer numbers 
+    
+    document.getElementById("botctext1").setAttribute("x", cxOffset+botNumbersLeftMarginOffset);
+    document.getElementById("botctext2").setAttribute("x", cxOffset+botcDistance+botNumbersLeftMarginOffset);
+    document.getElementById("botctext3").setAttribute("x", cxOffset+2*botcDistance+botNumbersLeftMarginOffset);
+    document.getElementById("botctext4").setAttribute("x", cxOffset+3*botcDistance+botNumbersLeftMarginOffset);
+    document.getElementById("botctext5").setAttribute("x", cxOffset+4*botcDistance+botNumbersLeftMarginOffset);
+    document.getElementById("botctext6").setAttribute("x", cxOffset+5*botcDistance+botNumbersLeftMarginOffset);
+    document.getElementById("botctext7").setAttribute("x", cxOffset+6*botcDistance+botNumbersLeftMarginOffset);
+    
+    document.getElementById("botctext1").setAttribute("y", deeperLevel+cRad+defaultFontSizeNum);
+    document.getElementById("botctext2").setAttribute("y", deeperLevel+cRad+defaultFontSizeNum);
+    document.getElementById("botctext3").setAttribute("y", deeperLevel+cRad+defaultFontSizeNum);
+    document.getElementById("botctext4").setAttribute("y", deeperLevel+cRad+defaultFontSizeNum);
+    document.getElementById("botctext5").setAttribute("y", deeperLevel+cRad+defaultFontSizeNum);
+    document.getElementById("botctext6").setAttribute("y", deeperLevel+cRad+defaultFontSizeNum);
+    document.getElementById("botctext7").setAttribute("y", deeperLevel+cRad+defaultFontSizeNum);
+    
+    document.getElementById("botctext1").setAttribute("fill", defaultNumberColor);
+    document.getElementById("botctext2").setAttribute("fill", defaultNumberColor);
+    document.getElementById("botctext3").setAttribute("fill", defaultNumberColor);
+    document.getElementById("botctext4").setAttribute("fill", defaultNumberColor);
+    document.getElementById("botctext5").setAttribute("fill", defaultNumberColor);
+    document.getElementById("botctext6").setAttribute("fill", defaultNumberColor);
+    document.getElementById("botctext7").setAttribute("fill", defaultNumberColor);
+    
+    document.getElementById("botctext1").setAttribute("font-size", defaultFontSize);
+    document.getElementById("botctext2").setAttribute("font-size", defaultFontSize);
+    document.getElementById("botctext3").setAttribute("font-size", defaultFontSize);
+    document.getElementById("botctext4").setAttribute("font-size", defaultFontSize);
+    document.getElementById("botctext5").setAttribute("font-size", defaultFontSize);
+    document.getElementById("botctext6").setAttribute("font-size", defaultFontSize);
+    document.getElementById("botctext7").setAttribute("font-size", defaultFontSize);
+
+    //bottom layer
+    
+    document.getElementById("c1").setAttribute("cx", cxOffset);
+    document.getElementById("c2").setAttribute("cx", cxOffset+botcDistance);
+    document.getElementById("c3").setAttribute("cx", cxOffset+2*botcDistance);
+    document.getElementById("c4").setAttribute("cx", cxOffset+3*botcDistance);
+    document.getElementById("c5").setAttribute("cx", cxOffset+4*botcDistance);
+    document.getElementById("c6").setAttribute("cx", cxOffset+5*botcDistance);
+    document.getElementById("c7").setAttribute("cx", cxOffset+6*botcDistance);
+    
+    document.getElementById("c1").setAttribute("cy", deeperLevel);
+    document.getElementById("c2").setAttribute("cy", deeperLevel);
+    document.getElementById("c3").setAttribute("cy", deeperLevel);
+    document.getElementById("c4").setAttribute("cy", deeperLevel);
+    document.getElementById("c5").setAttribute("cy", deeperLevel);
+    document.getElementById("c6").setAttribute("cy", deeperLevel);
+    document.getElementById("c7").setAttribute("cy", deeperLevel);
+    
+    document.getElementById("c1").setAttribute("r", cRad);
+    document.getElementById("c2").setAttribute("r", cRad);
+    document.getElementById("c3").setAttribute("r", cRad);
+    document.getElementById("c4").setAttribute("r", cRad);
+    document.getElementById("c5").setAttribute("r", cRad);
+    document.getElementById("c6").setAttribute("r", cRad);
+    document.getElementById("c7").setAttribute("r", cRad);
+    
+    document.getElementById("c1").setAttribute("fill", defaultcColor);
+    document.getElementById("c2").setAttribute("fill", defaultcColor);
+    document.getElementById("c3").setAttribute("fill", defaultcColor);
+    document.getElementById("c4").setAttribute("fill", defaultcColor);
+    document.getElementById("c5").setAttribute("fill", defaultcColor);
+    document.getElementById("c6").setAttribute("fill", defaultcColor);
+    document.getElementById("c7").setAttribute("fill", defaultcColor);
+    
+    //middle layer
+    
+    document.getElementById("midc1").setAttribute("cx", cxOffset+botcDistance/2);
+    document.getElementById("midc2").setAttribute("cx", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    
+    document.getElementById("midc1").setAttribute("cy", deeperLevel-levelHeight);
+    document.getElementById("midc2").setAttribute("cy", deeperLevel-levelHeight);
+    
+    document.getElementById("midc1").setAttribute("r", cRad);
+    document.getElementById("midc2").setAttribute("r", cRad);
+    
+    document.getElementById("midc1").setAttribute("fill", defaultcColor);
+    document.getElementById("midc2").setAttribute("fill", defaultcColor);
+    
+    //above middle layer
+    
+    document.getElementById("abovemidc1").setAttribute("cx", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("abovemidc2").setAttribute("cx", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    
+    document.getElementById("abovemidc1").setAttribute("cy", deeperLevel-2*levelHeight);
+    document.getElementById("abovemidc2").setAttribute("cy", deeperLevel-2*levelHeight);
+    
+    document.getElementById("abovemidc1").setAttribute("r", cRad);
+    document.getElementById("abovemidc2").setAttribute("r", cRad);
+    
+    document.getElementById("abovemidc1").setAttribute("fill", defaultcColor);
+    document.getElementById("abovemidc2").setAttribute("fill", defaultcColor);    
+    
+    //top layer
+    document.getElementById("topc1").setAttribute("cx", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    
+    document.getElementById("topc1").setAttribute("cy", deeperLevel-3*levelHeight);
+
+    document.getElementById("topc1").setAttribute("r", cRad);
+    
+    document.getElementById("topc1").setAttribute("fill", "purple");
+    
+    //roof layer
+    
+    document.getElementById("roofc1").setAttribute("cx", cxOffset+(3*botcDistance+5*botcDistance)/2);
+    
+    document.getElementById("roofc1").setAttribute("cy", deeperLevel-4*levelHeight+0.3*levelHeight);
+
+    document.getElementById("roofc1").setAttribute("r", cRad);
+    
+    document.getElementById("roofc1").setAttribute("fill", defaultcColor);
+    
+    //line extensions animation
+    
+    document.getElementById("line1").setAttribute("x1", cxOffset+botcDistance/2);
+    document.getElementById("line1").setAttribute("y1", deeperLevel-levelHeight+cRad);
+    document.getElementById("line1").setAttribute("x2", cxOffset+botcDistance/2);
+    document.getElementById("line1").setAttribute("y2", deeperLevel-levelHeight+cRad);
+    document.getElementById("line1x").setAttribute("attributeName", "x2");
+    document.getElementById("line1x").setAttribute("from", cxOffset+botcDistance/2);
+    document.getElementById("line1x").setAttribute("to", cxOffset);
+    document.getElementById("line1x").setAttribute("dur", "2s");
+    document.getElementById("line1y").setAttribute("attributeName", "y2");
+    document.getElementById("line1y").setAttribute("from", deeperLevel-levelHeight+cRad);
+    document.getElementById("line1y").setAttribute("to", deeperLevel-cRad);
+    document.getElementById("line1y").setAttribute("dur", "2s");
+    document.getElementById("line2").setAttribute("x1", cxOffset+botcDistance/2);
+    document.getElementById("line2").setAttribute("y1", deeperLevel-levelHeight+cRad);
+    document.getElementById("line2").setAttribute("x2", cxOffset+botcDistance/2);
+    document.getElementById("line2").setAttribute("y2", deeperLevel-levelHeight+cRad);
+    document.getElementById("line2x").setAttribute("attributeName", "x2");
+    document.getElementById("line2x").setAttribute("from", cxOffset+botcDistance/2);
+    document.getElementById("line2x").setAttribute("to", cxOffset+botcDistance);
+    document.getElementById("line2x").setAttribute("dur", "2s");
+    document.getElementById("line2y").setAttribute("attributeName", "y2");
+    document.getElementById("line2y").setAttribute("from", deeperLevel-levelHeight+cRad);
+    document.getElementById("line2y").setAttribute("to", deeperLevel-cRad);
+    document.getElementById("line2y").setAttribute("dur", "2s");
+    
+    document.getElementById("line3").setAttribute("x1", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("line3").setAttribute("y1", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line3").setAttribute("x2", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("line3").setAttribute("y2", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line3x").setAttribute("attributeName", "x2");
+    document.getElementById("line3x").setAttribute("from", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("line3x").setAttribute("to", cxOffset+botcDistance/2);
+    document.getElementById("line3x").setAttribute("dur", "2s");
+    document.getElementById("line3y").setAttribute("attributeName", "y2");
+    document.getElementById("line3y").setAttribute("from", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line3y").setAttribute("to", deeperLevel-levelHeight-cRad);
+    document.getElementById("line3y").setAttribute("dur", "2s");
+    document.getElementById("line4").setAttribute("x1", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("line4").setAttribute("y1", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line4").setAttribute("x2", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("line4").setAttribute("y2", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line4x").setAttribute("attributeName", "x2");
+    document.getElementById("line4x").setAttribute("from", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("line4x").setAttribute("to", cxOffset+2*botcDistance);
+    document.getElementById("line4x").setAttribute("dur", "2s");
+    document.getElementById("line4y").setAttribute("attributeName", "y2");
+    document.getElementById("line4y").setAttribute("from", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line4y").setAttribute("to", deeperLevel-cRad);
+    document.getElementById("line4y").setAttribute("dur", "2s");
+    
+    document.getElementById("line5").setAttribute("x1", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line5").setAttribute("y1", deeperLevel-levelHeight+cRad);
+    document.getElementById("line5").setAttribute("x2", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line5").setAttribute("y2", deeperLevel-levelHeight+cRad);
+    document.getElementById("line5x").setAttribute("attributeName", "x2");
+    document.getElementById("line5x").setAttribute("from", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line5x").setAttribute("to", cxOffset+3*botcDistance);
+    document.getElementById("line5x").setAttribute("dur", "2s");
+    document.getElementById("line5y").setAttribute("attributeName", "y2");
+    document.getElementById("line5y").setAttribute("from", deeperLevel-levelHeight+cRad);
+    document.getElementById("line5y").setAttribute("to", deeperLevel-cRad);
+    document.getElementById("line5y").setAttribute("dur", "2s");
+    document.getElementById("line6").setAttribute("x1", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line6").setAttribute("y1", deeperLevel-levelHeight+cRad);
+    document.getElementById("line6").setAttribute("x2", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line6").setAttribute("y2", deeperLevel-levelHeight+cRad);
+    document.getElementById("line6x").setAttribute("attributeName", "x2");
+    document.getElementById("line6x").setAttribute("from", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line6x").setAttribute("to", cxOffset+4*botcDistance);
+    document.getElementById("line6x").setAttribute("dur", "2s");
+    document.getElementById("line6y").setAttribute("attributeName", "y2");
+    document.getElementById("line6y").setAttribute("from", deeperLevel-levelHeight+cRad);
+    document.getElementById("line6y").setAttribute("to", deeperLevel-cRad);
+    document.getElementById("line6y").setAttribute("dur", "2s");
+    
+    document.getElementById("line7").setAttribute("x1", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    document.getElementById("line7").setAttribute("y1", deeperLevel-3*levelHeight+cRad);
+    document.getElementById("line7").setAttribute("x2", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    document.getElementById("line7").setAttribute("y2", deeperLevel-3*levelHeight+cRad);
+    document.getElementById("line7x").setAttribute("attributeName", "x2");
+    document.getElementById("line7x").setAttribute("from", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    document.getElementById("line7x").setAttribute("to", cxOffset+(1*botcDistance+2*botcDistance)/2);
+    document.getElementById("line7x").setAttribute("dur", "2s");
+    document.getElementById("line7y").setAttribute("attributeName", "y2");
+    document.getElementById("line7y").setAttribute("from", deeperLevel-3*levelHeight+cRad);
+    document.getElementById("line7y").setAttribute("to", deeperLevel-2*levelHeight-cRad);
+    document.getElementById("line7y").setAttribute("dur", "2s");
+    document.getElementById("line8").setAttribute("x1", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    document.getElementById("line8").setAttribute("y1", deeperLevel-3*levelHeight+cRad);
+    document.getElementById("line8").setAttribute("x2", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    document.getElementById("line8").setAttribute("y2", deeperLevel-3*levelHeight+cRad);
+    document.getElementById("line8x").setAttribute("attributeName", "x2");
+    document.getElementById("line8x").setAttribute("from", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    document.getElementById("line8x").setAttribute("to", cxOffset+5*botcDistance);
+    document.getElementById("line8x").setAttribute("dur", "2s");
+    document.getElementById("line8y").setAttribute("attributeName", "y2");
+    document.getElementById("line8y").setAttribute("from", deeperLevel-3*levelHeight+cRad);
+    document.getElementById("line8y").setAttribute("to", deeperLevel-cRad);
+    document.getElementById("line8y").setAttribute("dur", "2s");
+    
+    document.getElementById("line9").setAttribute("x1", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    document.getElementById("line9").setAttribute("y1", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line9").setAttribute("x2", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    document.getElementById("line9").setAttribute("y2", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line9x").setAttribute("attributeName", "x2");
+    document.getElementById("line9x").setAttribute("from", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    document.getElementById("line9x").setAttribute("to", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line9x").setAttribute("dur", "2s");
+    document.getElementById("line9y").setAttribute("attributeName", "y2");
+    document.getElementById("line9y").setAttribute("from", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line9y").setAttribute("to", deeperLevel-levelHeight-cRad);
+    document.getElementById("line9y").setAttribute("dur", "2s");
+    document.getElementById("line10").setAttribute("x1", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    document.getElementById("line10").setAttribute("y1", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line10").setAttribute("x2", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    document.getElementById("line10").setAttribute("y2", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line10x").setAttribute("attributeName", "x2");
+    document.getElementById("line10x").setAttribute("from", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    document.getElementById("line10x").setAttribute("to", cxOffset+6*botcDistance);
+    document.getElementById("line10x").setAttribute("dur", "2s");
+    document.getElementById("line10y").setAttribute("attributeName", "y2");
+    document.getElementById("line10y").setAttribute("from", deeperLevel-2*levelHeight+cRad);
+    document.getElementById("line10y").setAttribute("to", deeperLevel-cRad);
+    document.getElementById("line10y").setAttribute("dur", "2s");
+    
+    document.getElementById("line11").setAttribute("x1", cxOffset+(3*botcDistance+5*botcDistance)/2);
+    document.getElementById("line11").setAttribute("y1", deeperLevel-4*levelHeight+0.3*levelHeight+cRad);
+    document.getElementById("line11").setAttribute("x2", cxOffset+(3*botcDistance+5*botcDistance)/2);
+    document.getElementById("line11").setAttribute("y2", deeperLevel-4*levelHeight+0.3*levelHeight+cRad);
+    document.getElementById("line11x").setAttribute("attributeName", "x2");
+    document.getElementById("line11x").setAttribute("from", cxOffset+(3*botcDistance+5*botcDistance)/2);
+    document.getElementById("line11x").setAttribute("to", cxOffset+(2*botcDistance+3*botcDistance)/2);
+    document.getElementById("line11x").setAttribute("dur", "2s");
+    document.getElementById("line11y").setAttribute("attributeName", "y2");
+    document.getElementById("line11y").setAttribute("from", deeperLevel-4*levelHeight+0.3*levelHeight+cRad);
+    document.getElementById("line11y").setAttribute("to", deeperLevel-3*levelHeight-cRad);
+    document.getElementById("line11y").setAttribute("dur", "2s");
+    document.getElementById("line12").setAttribute("x1", cxOffset+(3*botcDistance+5*botcDistance)/2);
+    document.getElementById("line12").setAttribute("y1", deeperLevel-4*levelHeight+0.3*levelHeight+cRad);
+    document.getElementById("line12").setAttribute("x2", cxOffset+(3*botcDistance+5*botcDistance)/2);
+    document.getElementById("line12").setAttribute("y2", deeperLevel-4*levelHeight+0.3*levelHeight+cRad);
+    document.getElementById("line12x").setAttribute("attributeName", "x2");
+    document.getElementById("line12x").setAttribute("from", cxOffset+(3*botcDistance+5*botcDistance)/2);
+    document.getElementById("line12x").setAttribute("to", cxOffset+(5*botcDistance+6*botcDistance)/2);
+    document.getElementById("line12x").setAttribute("dur", "2s");
+    document.getElementById("line12y").setAttribute("attributeName", "y2");
+    document.getElementById("line12y").setAttribute("from", deeperLevel-4*levelHeight+0.3*levelHeight+cRad);
+    document.getElementById("line12y").setAttribute("to", deeperLevel-2*levelHeight-cRad);
+    document.getElementById("line12y").setAttribute("dur", "2s");
+    
+    //whole movement animation
+    
+    document.getElementById("line8move").setAttribute("attributeName", "x2");
+    document.getElementById("line8move").setAttribute("from", cxOffset+5*botcDistance);
+    document.getElementById("line8move").setAttribute("to", cxOffset+3*botcDistance);
+    document.getElementById("line8move").setAttribute("dur", "2s");
+    
+    document.getElementById("line9move").setAttribute("attributeName", "x2");
+    document.getElementById("line9move").setAttribute("from", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line9move").setAttribute("to", cxOffset+(4*botcDistance+5*botcDistance)/2);
+    document.getElementById("line9move").setAttribute("dur", "2s");
+
+    document.getElementById("line5movex1").setAttribute("attributeName", "x1");
+    document.getElementById("line5movex1").setAttribute("from", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line5movex1").setAttribute("to", cxOffset+(4*botcDistance+5*botcDistance)/2);
+    document.getElementById("line5movex1").setAttribute("dur", "2s");
+    document.getElementById("line5movex2").setAttribute("attributeName", "x2");
+    document.getElementById("line5movex2").setAttribute("from", cxOffset+3*botcDistance);
+    document.getElementById("line5movex2").setAttribute("to", cxOffset+4*botcDistance);
+    document.getElementById("line5movex2").setAttribute("dur", "2s");
+    
+    document.getElementById("line6movex1").setAttribute("attributeName", "x1");
+    document.getElementById("line6movex1").setAttribute("from", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("line6movex1").setAttribute("to", cxOffset+(4*botcDistance+5*botcDistance)/2);
+    document.getElementById("line6movex1").setAttribute("dur", "2s");
+    document.getElementById("line6movex2").setAttribute("attributeName", "x2");
+    document.getElementById("line6movex2").setAttribute("from", cxOffset+4*botcDistance);
+    document.getElementById("line6movex2").setAttribute("to", cxOffset+5*botcDistance);
+    document.getElementById("line6movex2").setAttribute("dur", "2s");
+    
+    //cirlce movement animation
+    
+    document.getElementById("circlemove11").setAttribute("attributeName", "cx");    
+    document.getElementById("circlemove11").setAttribute("from", cxOffset+3*botcDistance);
+    document.getElementById("circlemove11").setAttribute("to", cxOffset+4*botcDistance);
+    document.getElementById("circlemove11").setAttribute("dur", "2s");
+    
+    document.getElementById("circlemove12").setAttribute("attributeName", "cx");    
+    document.getElementById("circlemove12").setAttribute("from", cxOffset+4*botcDistance);
+    document.getElementById("circlemove12").setAttribute("to", cxOffset+5*botcDistance);
+    document.getElementById("circlemove12").setAttribute("dur", "2s");
+    
+    document.getElementById("circlemove13").setAttribute("attributeName", "cx");    
+    document.getElementById("circlemove13").setAttribute("from", cxOffset+5*botcDistance);
+    document.getElementById("circlemove13").setAttribute("to", cxOffset+3*botcDistance);
+    document.getElementById("circlemove13").setAttribute("dur", "2s");
+    
+    document.getElementById("circlemove14").setAttribute("attributeName", "cx");    
+    document.getElementById("circlemove14").setAttribute("from", cxOffset+(3*botcDistance+4*botcDistance)/2);
+    document.getElementById("circlemove14").setAttribute("to", cxOffset+(4*botcDistance+5*botcDistance)/2);
+    document.getElementById("circlemove14").setAttribute("dur", "2s");
+}
+</script>
+
+
+
+
+
+
+

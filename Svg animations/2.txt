@@ -1,0 +1,60 @@
+<svg width="300" height="300">
+    <line x1="10" y1="10" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2">
+        <animate id="l1" attributeName="y2" from="200" to="10" dur="5s" begin="1s;l1r.end+1s" fill="freeze"></animate>
+        <animate id="l1r" attributeName="y2" from="10" to="200" dur="5s" begin="l1.end+1s" fill="freeze"></animate>
+    </line>
+    <line x1="10" y1="10" x2="100" y2="200" style="stroke:rgb(0,255,0);stroke-width:2">
+        <animate id="l2" attributeName="x2" from="100" to="10" dur="5s" begin="1s;l1r.end+1s" fill="freeze"></animate>
+        <animate id="l2r" attributeName="x2" from="10" to="100" dur="5s" begin="l2.end+1s" fill="freeze"></animate>
+    </line>
+    <line x1="140" y1="30" x2="100" y2="200" style="stroke:rgb(0,0,255);stroke-width:2">
+        <animate id="l31" attributeName="x1" from="140" to="200" dur="5s" begin="1s;l31r.end+1s" fill="freeze"></animate>
+        <animate id="l32" attributeName="x2" from="100" to="10" dur="5s" begin="1s;l32r.end+1s" fill="freeze"></animate>
+        <animate id="l33" attributeName="y1" from="30" to="200" dur="5s" begin="1s;l33r.end+1s" fill="freeze"></animate>
+        <animate id="l31r" attributeName="x1" from="200" to="140" dur="5s" begin="l31.end+1s" fill="freeze"></animate>
+        <animate id="l32r" attributeName="x2" from="10" to="100" dur="5s" begin="l32.end+1s" fill="freeze"></animate>
+        <animate id="l33r" attributeName="y1" from="200" to="30" dur="5s" begin="l33.end+1s" fill="freeze"></animate>
+    </line>
+    <line x1="140" y1="30" x2="200" y2="200" style="stroke:rgb(0,0,0);stroke-width:2">
+        <animate id="l41" attributeName="x1" from="140" to="200" dur="5s" begin="1s;l41r.end+1s" fill="freeze"></animate>
+        <animate id="l42" attributeName="y1" from="30" to="200" dur="5s" begin="1s;l42r.end+1s" fill="freeze"></animate>
+        <animate id="l43" attributeName="y2" from="200" to="10" dur="5s" begin="1s;l43r.end+1s" fill="freeze"></animate>
+        <animate id="l41r" attributeName="x1" from="200" to="140" dur="5s" begin="l41.end+1s" fill="freeze"></animate>
+        <animate id="l42r" attributeName="y1" from="200" to="30" dur="5s" begin="l42.end+1s" fill="freeze"></animate>
+        <animate id="l43r" attributeName="y2" from="10" to="200" dur="5s" begin="l43.end+1s" fill="freeze"></animate>
+    </line>
+    
+    
+    <circle cx="10" cy="10" r="9" stroke="black" stroke-width="1" fill="blue">
+    </circle>
+    <circle cx="140" cy="30" r="9" stroke="black" stroke-width="1" fill="blue">
+        <animate id="c11" attributeName="cx" from="140" to="200" dur="5s" begin="1s;c11r.end+1s" fill="freeze"></animate>
+        <animate id="c12" attributeName="cy" from="30" to="200" dur="5s" begin="1s;c12r.end+1s" fill="freeze"></animate>
+        <animate id="c11r" attributeName="cx" from="200" to="140" dur="5s" begin="c11.end+1s" fill="freeze"></animate>
+        <animate id="c12r" attributeName="cy" from="200" to="30" dur="5s" begin="c12.end+1s" fill="freeze"></animate>
+    </circle>
+    <circle cx="100" cy="200" r="9" stroke="black" stroke-width="1" fill="blue">
+        <animate id="c2" attributeName="cx" from="100" to="10" dur="5s" begin="1s;c2r.end+1s" fill="freeze"></animate>
+        <animate id="c2r" attributeName="cx" from="10" to="100" dur="5s" begin="c2.end+1s" fill="freeze"></animate>
+    </circle>
+    <circle cx="200" cy="200" r="9" stroke="black" stroke-width="1" fill="blue">
+        <animate id="c3" attributeName="cy" from="200" to="10" dur="5s" begin="1s;c3r.end+1s" fill="freeze"></animate>
+        <animate id="c3r" attributeName="cy" from="10" to="200" dur="5s" begin="c3.end+1s" fill="freeze"></animate>
+    </circle>
+    
+    <text x="5" y="15" font-size="15" fill="white" > A </text>
+    <text x="135" y="35" font-size="15" fill="white" > Ã 
+        <animate id="t11" attributeName="x" from="135" to="195" dur="5s" begin="1s;t11r.end+1s" fill="freeze"></animate>
+        <animate id="t12" attributeName="y" from="35" to="205" dur="5s" begin="1s;t12r.end+1s" fill="freeze"></animate>
+        <animate id="t11r" attributeName="x" from="195" to="135" dur="5s" begin="t11.end+1s" fill="freeze"></animate>
+        <animate id="t12r" attributeName="y" from="205" to="35" dur="5s" begin="t12.end+1s" fill="freeze"></animate>
+    </text>
+    <text x="95" y="205" font-size="15" fill="white" > Ä 
+        <animate id="t2" attributeName="x" from="95" to="5" dur="5s" begin="1s;t2r.end+1s" fill="freeze"></animate>
+        <animate id="t2r" attributeName="x" from="5" to="95" dur="5s" begin="t2.end+1s" fill="freeze"></animate>
+    </text>
+    <text x="195" y="205" font-size="15" fill="white" > Â 
+        <animate id="t3" attributeName="y" from="205" to="15" dur="5s" begin="1s;t3r.end+1s" fill="freeze"></animate>
+        <animate id="t3r" attributeName="y" from="15" to="205" dur="5s" begin="t3.end+1s" fill="freeze"></animate>
+    </text>
+</svg>

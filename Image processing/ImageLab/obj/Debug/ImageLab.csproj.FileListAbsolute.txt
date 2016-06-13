@@ -1,0 +1,39 @@
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\bin\Debug\ImageLab.exe
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\bin\Debug\ImageLab.pdb
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\obj\Debug\ImageLab.Form1.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\obj\Debug\ImageLab.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\obj\Debug\ImageLab.csproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\obj\Debug\ImageLab.exe
+C:\Users\user\Documents\Visual Studio 2008\Projects\ImageLab\ImageLab\obj\Debug\ImageLab.pdb
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.exe
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.pdb
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\bin\Debug\ImageLab.exe
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\bin\Debug\ImageLab.pdb
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ResolveAssemblyReference.cache
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.Form1.resources
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.Properties.Resources.resources
+c:\kyriakos\mathimata\duth\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.csproj.GenerateResource.Cache
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.exe
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.pdb
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\bin\Debug\ImageLab.exe
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\bin\Debug\ImageLab.pdb
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ResolveAssemblyReference.cache
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.Form1.resources
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.Properties.Resources.resources
+c:\kyriakos\mathimata\image processing\Εργαστήριο\02\ImageLab\ImageLab\obj\Debug\ImageLab.csproj.GenerateResource.Cache
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\ImageLab.exe
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\ImageLab.pdb
+C:\Users\Christos\Desktop\ImageLab\ImageLab\bin\Debug\ImageLab.exe
+C:\Users\Christos\Desktop\ImageLab\ImageLab\bin\Debug\ImageLab.pdb
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\ImageLab.csprojResolveAssemblyReference.cache
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\ImageLab.Form1.resources
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\ImageLab.Properties.Resources.resources
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\ImageLab.csproj.GenerateResource.Cache
+C:\Users\Christos\Desktop\ImageLab\ImageLab\bin\Debug\af\ImageLab.resources.dll
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\ImageLab.Form1.af.resources
+C:\Users\Christos\Desktop\ImageLab\ImageLab\obj\Debug\af\ImageLab.resources.dll
+F:\ImageLab\ImageLab\obj\Debug\ImageLab.exe
+F:\ImageLab\ImageLab\obj\Debug\ImageLab.pdb
+C:\Users\Xristos\Dropbox\ergasia epeksergasia eikonas\ImageLab\obj\Debug\ImageLab.exe
+C:\Users\Xristos\Dropbox\ergasia epeksergasia eikonas\ImageLab\obj\Debug\ImageLab.pdb
