@@ -707,11 +707,11 @@ inline void chooseballmaterial(int j)
 void Balls(void)
 {	
 	moveballs();
-	if(state==-1) quadtree();								//because we want to know where collitions take place
+	if(state==-1) quadtree();				//because we want to know where collitions take place
 	testforcollisions();
-	if(state==-1) quadtree();								//because some balls changed corrdinates and we can see it on the screen 
+	if(state==-1) quadtree();				//because some balls changed corrdinates and we can see it on the screen 
 
-	if(ballsexist==1){                                       //kantw an exoun bgei mpales, allazei sthn createballs
+	if(ballsexist==1){                                      //do if balls exist, changes in createballs
 		for(int j=0; j<newBalls.size(); j++)		   
 		{
 			glPushMatrix();
