@@ -1,4 +1,4 @@
-##Collision detection
+##Collision detection (2012-2013)
 
 A project about spherical collision detection. A quadtree can be toggle on/off in order to see the performance difference.
 Some keys and their actions are:
