@@ -32,29 +32,29 @@ int prev_y = 0;
 GLfloat blackColor[] = { 0.0f, 0.0f, 0.0f, 1.0f }; 
 const float cubedimension=100.0f;                  //cube side dimension
 const float halfdimension=cubedimension/2;         //used later in calcualtions
-int maxradious=5;							//max ball radious
-int minradious=5;							//min ball radious
-const int numberofballstobespawned=5;			//number of balls spawned on every R
-const float maxspeedofballs=0.5f;               //maximum ball velocity
+int maxradious=5;				   //max ball radious
+int minradious=5;				   //min ball radious
+const int numberofballstobespawned=5;		   //number of balls spawned on every R
+const float maxspeedofballs=0.5f;                  //maximum ball velocity
 const float backstepanalogy=0.01f;
 float distancefromcentertocenter;
 int sumofradiouses;
 float penetrationdepth;
 
 int ballsexist=0, flag2;
-int NumberOfBalls=0;							//maximum balls
+int NumberOfBalls=0;				   //maximum balls
 int stopcreatinglast5balls=0;				
 unsigned int i=0;
 unsigned int previousi;
 
-int frameCount=0;						//variables that have to do with CalculateFPS()
+int frameCount=0;				   //variables that have to do with CalculateFPS()
 float currentTime;
 float previousTime=0;
 float fps;
 float timertoprint=0;
 
-int flagtoshowonlyonce=0;				//flag for the initial message about the quadtree, changes in initialmessage
-int state=-1;							//state -1 means the quadtree is used, state 1 it is not
+int flagtoshowonlyonce=0;			   //flag for the initial message about the quadtree, changes in initialmessage
+int state=-1;					   //state -1 means the quadtree is used, state 1 it is not
 
 class MyBalls;
 inline void initialmessage(void);
@@ -161,7 +161,7 @@ inline void CreateBalls(void){
 	NumberOfBalls=NumberOfBalls+numberofballstobespawned; 
 	newBalls.resize(NumberOfBalls);
 	flag2=numberofballstobespawned-1;
-	previousi=i;							//we need to know which is the previous in order to recover it in case the loop in setballattributes reaches 700
+	previousi=i;					//we need to know which is the previous in order to recover it in case the loop in setballattributes reaches 700
 	for(i; i<newBalls.size(); i++)			//for example the loop may be stack in the second ball we put and we must know which was the previous i
 	{		
 		if(stopcreatinglast5balls==1)
@@ -801,7 +801,7 @@ void Keyboard(unsigned char key, int x, int y)
 	case 'k':
 		cam_pos_x = 0.0f;
 		cam_pos_y = cubedimension+100;
-		cam_pos_z = -1.0f; //an einai 0 den tha xei klish kai den tha fainetai
+		cam_pos_z = -1.0f; //if it is 0 it won't have tilt and it won't be visible
 		cam_look_x = 0.0f;
 		cam_look_y = -1.0f;
 		cam_look_z = 0.0f;
