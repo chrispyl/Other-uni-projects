@@ -1,4 +1,4 @@
-## Some university projects that i liked spending time with
+## Some projects that i liked spending time with
 
 |Project | Description | Language, APIs etc |
 |--------|-------------|----------|
