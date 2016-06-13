@@ -7,4 +7,4 @@
 |Image processing|Texture characteristics extraction|C#|
 |Playing with HTML, Javascript, jQuery|A simple site|HTML, Javascript, jQuery|
 |Svg animations|Mathematical algorithms depiction|HTML, Javascript, Svg|
-|Microprocessors|Simple ATM|Assebly for 8085|
+|ATM|Simple ATM with basic functions|Assebly for 8085|
